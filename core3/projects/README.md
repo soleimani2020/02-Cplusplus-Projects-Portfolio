@@ -1,6 +1,6 @@
 # Core3 Projects
 
-This repository contains a collection of small projects demonstrating algorithms, simulators, and utilities in Python (or your preferred language). Each project has its own directory under `core3/projects/`.
+This repository contains a collection of cool projects demonstrating data structures and algorithms in C++. Each project has its own directory under `core3/projects/`.
 
 ## Projects
 
