@@ -50,4 +50,4 @@ Feel free to fork this repository and add your own improvements or new projects.
 
 ## License
 
-Specify your license here (e.g., MIT, GPL, etc.).
+MIT
