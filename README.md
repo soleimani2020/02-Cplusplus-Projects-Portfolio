@@ -14,7 +14,7 @@ This repository serves as a portfolio of C++ projects that (hopefully) indicate 
 
 | Category | Description |
 |-----------|--------------|
-| **Data Structures** | Implementations of linked lists, stacks, queues, trees, and graphs. |
+| **Data Structures** | Implementations of linked lists, stacks, queues, hash, heap, trees, and graphs. |
 | **Algorithms** | Sorting, searching, dynamic programming, and graph traversal algorithms. |
 | **Projects** | Real-world projects that apply C++ for problem-solving, simulations, and optimization. |
 
