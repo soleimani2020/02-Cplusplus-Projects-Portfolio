@@ -57,9 +57,10 @@ public:
             q.pop(); // move to next node  
            
             for(int neighbor:adj[node]){
-                if(!visited_vertices[neighbor]){
-                    visited_vertices[neighbor]=true;
-                    q.push(neighbor)
+                if(!visited_vertices[neighbor])  // check if neighbor is not visited 
+                {
+                    visited_vertices[neighbor]=true; // mark it true if not 
+                    q.push(neighbor)                 // push for later process
                 }
             }
         }
