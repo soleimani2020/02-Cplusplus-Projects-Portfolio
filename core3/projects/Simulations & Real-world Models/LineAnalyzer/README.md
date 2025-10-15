@@ -1,12 +1,44 @@
-Title: LineAnalyzer
-Using object oriented programming, this C++ code provides a set of operations to perform calculations and checks on pairs of lines, including checking properties like equality, parallelism, perpendicularity, and intersection.
+# 📐 Line Calculator in C++
 
-Main Functions:
+This C++ project implements a **line calculator** using a `lineType` class.  
+It allows users to analyze lines in the 2D plane and perform common operations such as:
 
-    is_nonvertical(): Checks if the line is non-vertical (i.e., b1 != 0), and if so, calculates and prints the slope of the line.
-    is_equal0(lineType line): Compares two lines and checks if they are equal based on a specific condition involving their coefficients.
-    is_equal(lineType line): Checks if two lines are equal by comparing their coefficients directly or if they are scalar multiples of each other.
-    is_parallel(lineType line): Determines if two lines are parallel by comparing their slopes.
-    is_perpendicular(lineType line): Checks if two lines are perpendicular by calculating the product of their slopes and checking if it's equal to -1.
-    is_intersection(lineType line): Calculates and prints the intersection point of two lines, if it exists.
+- Checking if a line is **vertical** or **non-vertical**  
+- Calculating the **slope** of a line  
+- Checking if two lines are **equal**  
+- Checking if two lines are **parallel** or **perpendicular**  
+- Finding the **intersection point** of two lines  
 
+---
+
+## ⚙️ Class Overview
+
+### `lineType`
+Represents a line in 2D space using the **general form**:
+
+
+**Private Attributes:**
+- `a1` – Coefficient of x  
+- `b1` – Coefficient of y  
+- `c1` – Constant term  
+
+**Public Methods:**
+- `is_nonvertical()` – Checks if the line is vertical and prints its slope  
+- `is_equal(lineType line)` – Checks if two lines are equal (exact match or scalar multiple)  
+- `is_parallel(lineType line)` – Checks if two lines are parallel  
+- `is_perpendicular(lineType line)` – Checks if two lines are perpendicular  
+- `is_intersection(lineType line)` – Finds and prints the intersection point of two lines  
+
+---
+
+## 🖥️ Example Usage
+
+```cpp
+lineType line1(1, 2, 3);
+lineType line2(2, -1, 5);
+
+line1.is_nonvertical();
+line1.is_equal(line2);
+line1.is_parallel(line2);
+line1.is_perpendicular(line2);
+line1.is_intersection(line2);
