@@ -1,6 +1,6 @@
 # 🗂 Data Structures
 
-This folder contains implementations of various **data structures** in C++.
+This repository contains implementations of various **data structures** in C++.
 
 ## 📁 Subfolders
 
@@ -15,4 +15,4 @@ This folder contains implementations of various **data structures** in C++.
 9. **🌳 tree** – Binary trees, binary search trees, AVL trees, etc.  
 10. **🕸 graphs** – Graph representations and algorithms  
 
-Each subfolder contains relevant **C++ implementations** with comments for clarity.
+Each subfolder contains relevant **C++ implementations**.
