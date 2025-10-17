@@ -1,7 +1,7 @@
 # 🧠 Linked List Implementation in C++
 
 A **complete and modular implementation** of a **Linked List** in C++, featuring both **linear** and **circular** lists.  
-This project demonstrates essential linked list operations, recursion, sorting, searching, and pointer manipulation.  
+This project demonstrates essential linked list operations, recursion, sorting, searching, and pointer manipulation using object oriented design.  
 
 ---
 
