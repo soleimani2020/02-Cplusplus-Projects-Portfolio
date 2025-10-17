@@ -15,7 +15,3 @@ This project demonstrates how a queue can efficiently reuse memory using **circu
 
 ---
 
-## 🏗️ Class Overview
-
-### ✨ `class Circular_Qeue`
-A class that implements a **circular queue** using an integer array.  
