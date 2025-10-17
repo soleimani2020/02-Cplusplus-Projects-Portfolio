@@ -5,7 +5,7 @@ Circular queues are queues in which the last node points back to the first node,
 
 ---
 
-## 1️⃣ Features
+## ✨ Features
 
 - Enqueue elements at the rear
 - Dequeue elements from the front
