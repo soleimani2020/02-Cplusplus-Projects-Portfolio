@@ -5,7 +5,7 @@ This project demonstrates how a queue can efficiently reuse memory using **circu
 
 ---
 
-## 🧩 Features
+## ✨ Features
 
 ✅ Circular buffer logic using modulo (`%`)  
 ✅ O(1) time complexity for enqueue/dequeue  
