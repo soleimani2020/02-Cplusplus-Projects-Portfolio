@@ -5,7 +5,7 @@ This project demonstrates basic stack operations (Push, Pop, Peek, Display) usin
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
 - ✅ Dynamic memory (no fixed-size array)
 - ✅ Simple O(1) Push/Pop operations
