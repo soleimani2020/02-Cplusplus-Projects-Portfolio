@@ -5,11 +5,11 @@ This project demonstrates fundamental **data structure operations** including **
 
 ---
 
-## ⚙️ Features
+## ✨ Features
 
-- Dynamic memory allocation (no fixed size limit)  
-- Supports **Enqueue**, **Dequeue**, and **Display** operations  
-- Handles **empty queue** and **memory cleanup** correctly  
-- Clear and beginner-friendly implementation  
+✅ Dynamic memory allocation (no fixed size limit)  
+✅ Supports **Enqueue**, **Dequeue**, and **Display** operations  
+✅ Handles **empty queue** and **memory cleanup** correctly  
+✅ Clear and beginner-friendly implementation  
 
 ---
