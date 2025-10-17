@@ -1,30 +1,15 @@
-🔗 Queue Using Linked List in C++
+# 🧱 Queue Implementation using Linked List in C++
 
-A simple Queue data structure implemented with a singly linked list in C++.
-⚙️ Features:
+A simple and efficient implementation of a **Queue** using a **Linked List** in C++.  
+This project demonstrates fundamental **data structure operations** including **enqueue**, **dequeue**, and **display**.
 
-    ➕ Enqueue: Add elements at the rear of the queue.
+---
 
-    ➖ Dequeue: Remove elements from the front of the queue.
+## ⚙️ Features
 
-    🚫 Empty check: Detects when the queue is empty.
+- Dynamic memory allocation (no fixed size limit)  
+- Supports **Enqueue**, **Dequeue**, and **Display** operations  
+- Handles **empty queue** and **memory cleanup** correctly  
+- Clear and beginner-friendly implementation  
 
-    📄 Display: Prints all elements currently in the queue.
-
-🔍 Overview:
-
-    Dynamic queue with no fixed size limit.
-
-    Maintains FIFO (First In First Out) ordering.
-
-    Uses linked nodes to efficiently add and remove elements.
-
-    Properly updates front and rear pointers during operations.
-
-📚 Ideal for:
-
-    Learning fundamental data structures.
-
-    Practicing pointer manipulation in C++.
-
-    Understanding queue operations using linked lists.
+---
