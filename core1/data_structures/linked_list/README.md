@@ -5,7 +5,7 @@ This project demonstrates essential linked list operations, recursion, sorting, 
 
 ---
 
-## ⚙️ Features
+## ✨ Features
 
 ✅ Create and manage dynamic linked lists  
 ✅ Supports **Insertion**, **Deletion**, **Search**, **Concatenation**, **Sorting**, and **Reversal**  
