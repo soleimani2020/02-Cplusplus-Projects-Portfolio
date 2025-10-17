@@ -5,7 +5,7 @@ This project demonstrates how hashing works behind the scenes, including **inser
 
 ---
 
-## ⚙️ Features
+## ✨ Features
 
 ✅ Uses **open addressing** with **linear probing**  
 ✅ Handles **collisions** efficiently  
