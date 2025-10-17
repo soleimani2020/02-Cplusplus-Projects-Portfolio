@@ -5,7 +5,7 @@ This project demonstrates fundamental stack operations — **Push**, **Pop**, **
 
 ---
 
-## 🧩 Features
+## ✨ Features
 
 ✅ Dynamic memory allocation using heap (`new`)  
 ✅ Core stack operations implemented cleanly  
