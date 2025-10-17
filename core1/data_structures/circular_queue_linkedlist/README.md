@@ -1,6 +1,6 @@
 # 🔄 Circular Queue Using Linked List in C++
 
-This repository demonstrates the implementation of a **Circular Queue** using a **singly linked list** in **C++**.  
+This project demonstrates the implementation of a **Circular Queue** using a **singly linked list** in **object oriented C++**.  
 Circular queues are queues in which the last node points back to the first node, making it circular.
 
 ---
