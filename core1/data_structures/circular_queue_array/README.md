@@ -1,6 +1,6 @@
 # 🔁🚦 Circular Queue using Array (C++)
 
-A simple implementation of a **Circular Queue** in C++.  
+An implementation of a **Circular Queue** in C++.  
 This project demonstrates how a queue can efficiently reuse memory using **circular indexing**.
 
 ---
