@@ -1,16 +1,15 @@
-🔄 Circular Queue Using Linked List in C++
+# 🔄 Circular Queue Using Linked List in C++
 
-An implementation of a circular queue with a singly linked list.
-Features:
+This repository demonstrates the implementation of a **Circular Queue** using a **singly linked list** in **C++**.  
+Circular queues are queues in which the last node points back to the first node, making it circular.
 
-    ➕ Enqueue: Add element at the rear.
+---
 
-    ➖ Dequeue: Remove element from the front.
+## 1️⃣ Features
 
-    🔄 Circular linking to efficiently cycle through queue.
-
-    🚫 Checks for empty queue.
-
-    📋 Displays all elements in queue order.
-
-Perfect for learning linked list manipulation and circular queue logic in C++!
+- Enqueue elements at the rear
+- Dequeue elements from the front
+- Circular linking ensures no wasted space
+- Dynamic memory allocation (linked list)
+- Display the queue elements
+- Handles **empty** and **single node** cases
