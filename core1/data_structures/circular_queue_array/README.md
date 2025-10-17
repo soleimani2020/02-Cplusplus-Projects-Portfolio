@@ -1,32 +1,21 @@
-🔄 Circular Queue Implementation Using Array in C++
+# 🔁 Circular Queue using Array (C++)
 
-Efficient Circular Queue data structure implemented with a fixed-size array in C++.
-⚙️ Features:
+A simple implementation of a **Circular Queue** in C++.  
+This project demonstrates how a queue can efficiently reuse memory using **circular indexing**.
 
-    ➕ Enqueue: Adds elements at the rear, wraps around when reaching the end.
+---
 
-    ➖ Dequeue: Removes elements from the front, supports circular wrap.
+## 🧩 Features
 
-    🔄 Circular Logic: Utilizes modulo arithmetic to reuse array space efficiently.
+✅ Circular buffer logic using modulo (`%`)  
+✅ O(1) time complexity for enqueue/dequeue  
+✅ Dynamic queue size selection at runtime  
+✅ Overflow & underflow protection  
+✅ Clear OOP-based design  
 
-    🚫 Full/Empty Checks: Properly detects when the queue is full or empty.
+---
 
-    📄 Display: Prints current elements in queue order.
+## 🏗️ Class Overview
 
-🔍 Overview:
-
-    Fixed size queue using circular buffering technique.
-
-    Prevents wasted space common in linear array queues.
-
-    Front and rear pointers wrap around array bounds.
-
-    Supports seamless enqueue and dequeue operations with O(1) time complexity.
-
-💡 Use Cases:
-
-    Buffer management (e.g., data streams, IO buffers).
-
-    Real-time task scheduling.
-
-    Situations requiring fixed memory usage with FIFO behavior.
+### ✨ `class Circular_Qeue`
+A class that implements a **circular queue** using an integer array.  
