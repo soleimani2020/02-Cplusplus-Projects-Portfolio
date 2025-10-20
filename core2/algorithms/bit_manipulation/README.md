@@ -10,4 +10,4 @@ This project demonstrates how to **set, clear, toggle, and check bits** of an in
 - ✅ Object-oriented C++ design (`BitManipulator` class)  
 - ✅ Set, clear, toggle, and check specific bits  
 - ✅ Print the current value of the number  
-- ✅ Works with any non-negative integer 
+- ✅ Works with any non-negative integer. 
