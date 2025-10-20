@@ -1,4 +1,5 @@
-#♛ Bit Manipulation (C++)
+
+# ♛ Bit Manipulation (C++)
 
 A simple object-oriented implementation of **bit manipulation** in C++.  
 This project demonstrates how to **set, clear, toggle, and check bits** of an integer using a class-based approach.
