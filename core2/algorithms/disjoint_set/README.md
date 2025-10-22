@@ -1,6 +1,6 @@
 # ♛ Disjoint Set (Union-Find) in C++
 
-A clean and efficient implementation of the **Disjoint Set** (also called **Union-Find**) data structure in C++.  
+A simple implementation of the **Disjoint Set** (also called **Union-Find**) data structure in C++.  
 This project demonstrates how to **manage groups of elements**, check **connectivity**, and **merge sets efficiently** using **object-oriented design**.
 
 ---
