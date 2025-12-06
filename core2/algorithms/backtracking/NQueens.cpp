@@ -13,13 +13,14 @@ using namespace std;
 
 class NQueens {
 private:
-    int N;
-    vector<int> board; // board[i] = column of queen in row i
-    int solutionCount;
+    int N; // board size 
+    vector<int> board; // board[i] = column of queen in row i : board[2] = 3 → queen at (row 2, column 3)
+    int solutionCount;  // counting valid solutions 
 
     // Check if placing a queen at (row, col) is safe
     bool isSafe(int row, int col) const {
         for (int i = 0; i < row; i++) {
+            // Column conflict  || Diagonal conflict 
             if (board[i] == col || abs(board[i] - col) == abs(i - row))
                 return false;
         }
