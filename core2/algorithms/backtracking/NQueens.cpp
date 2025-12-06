@@ -56,7 +56,13 @@ private:
     }
 
 public:
-    NQueens(int n) : N(n), board(n, -1), solutionCount(0) {}
+            
+    NQueens(int n) {
+            N = n;                 // set board size
+            board.resize(n, -1);   // create board and fill with -1
+            solutionCount = 0;     // no solutions yet
+    }
+          
 
     // Solve the N-Queens problem
     void solve() {
@@ -64,6 +70,9 @@ public:
         cout << "Total solutions: " << solutionCount << endl;
     }
 };
+
+
+
 
 int main() {
     int N;
