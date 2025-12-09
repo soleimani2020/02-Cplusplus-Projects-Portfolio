@@ -53,7 +53,6 @@ public:
             table[first_deleted] = val;
             used_table[first_deleted] = 1; // occupied
         }
-        // else table full -> insertion fails silently (same behavior as before)
     }
 
     void Deletion(int val){
@@ -75,7 +74,6 @@ public:
                 used_table[prob_index] = 2; // tombstone
                 return;
             }
-            // otherwise continue probing (either tombstone or occupied with different value)
         }
     }
 
