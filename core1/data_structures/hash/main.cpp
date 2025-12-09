@@ -23,7 +23,7 @@ public:
     void insert(int val){
 
         int index = Hash(val);
-        int first_deleted = -1;
+        int first_deleted = -1;  // no deleted slot found yet
 
         // linear probing to find a spot to insert the value
         for(int i = 0; i < size; i++){
@@ -45,7 +45,6 @@ public:
                     // value already present -> do nothing
                     return;
                 }
-                // else continue probing
             }
         }
 
