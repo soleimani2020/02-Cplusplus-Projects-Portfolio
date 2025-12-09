@@ -26,7 +26,7 @@ public:
        
         int index = Hash(val);
 
-        // This loop attempts to find a spot to insert the value.
+        // linear probing to find a spot to insert the value starting from : index, index+1, index+2 ,...
         for(int i=0;i<size;i++){
             int prob_index = (index+i)%size;
             if (used_table[prob_index]==false || table[prob_index]==val){
