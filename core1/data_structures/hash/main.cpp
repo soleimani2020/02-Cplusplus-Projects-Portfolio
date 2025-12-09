@@ -8,7 +8,7 @@ const int size = 10;
 class Hash_Set{
 private:
     int  table[size];       // 10 slots indexed from 0 to 9
-    bool used_table[size];
+    bool used_table[size];  // Keeps track of whether a slot has ever been used.
 
     int Hash(int value){
         return value%size;  // converts to index 
