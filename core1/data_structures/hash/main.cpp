@@ -7,7 +7,7 @@ const int size = 10;
 
 class Hash_Set{
 private:
-    int  table[size];  
+    int  table[size];       // 10 slots indexed from 0 to 9
     bool used_table[size];
 
     int Hash(int value){
