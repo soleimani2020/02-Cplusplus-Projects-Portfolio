@@ -17,8 +17,8 @@ private:
 public:
     Hash_Set(){
         for(int i=0; i<size;i++){
-            table[i]=-1;
-            used_table[i]=false;
+            table[i]=-1;           // empty slots
+            used_table[i]=false;   // the slot has never been used
         }
     }
    
