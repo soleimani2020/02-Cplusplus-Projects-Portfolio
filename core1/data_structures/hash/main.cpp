@@ -11,7 +11,7 @@ private:
     bool used_table[size];  // Keeps track of whether a slot has ever been used.
 
     int Hash(int value){
-        return value%size;  // converts to index 
+        return value%size;  // converts to an index between 0 and size-1
     }
    
 public:
