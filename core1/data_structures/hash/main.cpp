@@ -36,8 +36,9 @@ public:
             } 
             else if (used_table[prob_index] == 2) {
                 // tombstone: remember first one for possible reuse
-                if (first_deleted == -1) first_deleted = prob_index;
-            } 
+                if (first_deleted == -1) 
+                    first_deleted = prob_index;
+            }
             else if (used_table[prob_index] == 1) {
                 if (table[prob_index] == val) {
                     // value already present -> do nothing
