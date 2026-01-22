@@ -1,0 +1,19 @@
+| Aspect                          | Python Version                         | C++ Version                                             |
+| ------------------------------- | -------------------------------------- | ------------------------------------------------------- |
+| **Class Definition**            | `class Solution:`                      | `class Solution { ... };`                               |
+| **Method / Function Signature** | `def plusOne(self, nums):`             | `vector<int> plusOne(vector<int>& nums)`                |
+| **Typing**                      | Dynamic typing (no explicit types)     | Static typing (`int`, `vector<int>&`)                   |
+| **Empty Input Check**           | `if not nums: return []`               | `if (nums.empty()) return {};`                          |
+| **Container Type**              | `list`                                 | `vector<int>`                                           |
+| **Looping from End**            | `for i in range(len(nums)-1, -1, -1):` | `for(int i = nums.size()-1; i>=0; i--)`                 |
+| **Access / Update Digit**       | `nums[i] += 1`                         | `nums[i] += 1;`                                         |
+| **Carry Check**                 | `if nums[i] != 10:`                    | `if(nums[i] != 10){...}`                                |
+| **Carry Handling**              | `nums[i] = 0`                          | `nums[i] = 0;`                                          |
+| **Add New Digit if All 9s**     | `new_nums = [1] + [0 for _ in nums]`   | `vector<int> new_nums(nums.size()+1,0); new_nums[0]=1;` |
+| **Return**                      | Returns a `list`                       | Returns a `vector<int>`                                 |
+| **Printing Output**             | `print("The new array is:", new_nums)` | Loop with `cout <<`                                     |
+| **Semicolons / Braces**         | ❌ Not needed                           | ✅ Required                                              |
+| **Memory Management**           | Automatic                              | STL vector handles memory                               |
+| **Performance**                 | Interpreted, slightly slower           | Compiled, faster                                        |
+| **Syntax Verbosity**            | Concise, fewer lines                   | More verbose, explicit types and braces                 |
+

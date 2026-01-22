@@ -1,0 +1,20 @@
+| Aspect                          | Python Version                                   | C++ Version                                       |
+| ------------------------------- | ------------------------------------------------ | ------------------------------------------------- |
+| **Class Definition**            | `class Solution:`                                | `class Solution { ... };`                         |
+| **Method / Function Signature** | `def searchInsert(self, nums, target):`          | `int searchInsert(vector<int>& nums, int target)` |
+| **Typing**                      | Dynamic typing, no type declarations             | Static typing (`int`, `vector<int>&`)             |
+| **Empty Array Check**           | `if not nums: return 0`                          | `if (nums.empty()) return 0;`                     |
+| **Container Type**              | `list`                                           | `vector<int>`                                     |
+| **Loop Structure**              | `while low <= high:`                             | `while(low <= high)`                              |
+| **Index Access**                | `nums[mid]`                                      | `nums[mid]`                                       |
+| **Mid Calculation**             | `mid = low + (high - low)//2`                    | `mid = low + (high - low)/2`                      |
+| **Comparison Logic**            | `if target == nums[mid]` / `<` / `>`             | `if target == nums[mid]` / `<` / `>`              |
+| **Update Pointers**             | `low = mid + 1` / `high = mid - 1`               | `low = mid + 1` / `high = mid - 1`                |
+| **Return Value**                | `return mid` if found, `return low` if not found | `return mid` if found, `return low` if not found  |
+| **Division**                    | Integer division `//` to avoid floats            | Regular division `/` produces int automatically   |
+| **Printing Output**             | `print(f"The index is: {K}")`                    | `cout << "The index is: " << R;`                  |
+| **Main Function**               | `if __name__ == "__main__":`                     | `int main()`                                      |
+| **Syntax Verbosity**            | Short, concise                                   | More verbose; semicolons, braces required         |
+| **Memory Management**           | Automatic                                        | STL vector handles memory, manual otherwise       |
+| **Performance**                 | Interpreted (slightly slower)                    | Compiled (faster)                                 |
+

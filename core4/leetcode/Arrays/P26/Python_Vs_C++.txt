@@ -1,0 +1,24 @@
+| Aspect                        | Python Version                                     | C++ Version                                   |
+| ----------------------------- | -------------------------------------------------- | --------------------------------------------- |
+| **Class Definition**          | `class Solution:`                                  | `class Solution { ... };`                     |
+| **Method Name Style**         | `RemoveDuplicate` (PascalCase, uncommon in Python) | `removeDuplicates` (camelCase, common in C++) |
+| **Function Signature**        | `def RemoveDuplicate(self, nums):`                 | `int removeDuplicates(vector<int>& nums)`     |
+| **Type Declaration**          | No type declaration                                | Explicit types (`int`, `vector<int>&`)        |
+| **Empty Check**               | `if not nums: return 0`                            | `if (nums.empty()) return -1;`                |
+| **Return Value (Empty Case)** | Returns `0`                                        | Returns `-1`                                  |
+| **Container Type**            | `list`                                             | `vector<int>`                                 |
+| **Length Access**             | `len(nums)`                                        | `nums.size()`                                 |
+| **Loop Syntax**               | `for i in range(1, len(nums)):`                    | `for(int i=1; i<nums.size(); i++)`            |
+| **Element Access**            | `nums[i]`                                          | `nums[i]`                                     |
+| **In-place Replacement**      | `nums[replace] = nums[i]`                          | `nums[replace] = nums[i];`                    |
+| **Increment Operator**        | `replace += 1`                                     | `replace++;`                                  |
+| **Semicolons Required?**      | ❌ No                                               | ✅ Yes                                         |
+| **Memory Management**         | Automatic (Garbage Collector)                      | Manual (but STL manages vector memory)        |
+| **Printing Output**           | `print()`                                          | `cout <<`                                     |
+| **Printing Container**        | Can slice directly: `nums[:R]`                     | Must loop to print vector                     |
+| **Main Function**             | `if __name__ == "__main__":`                       | `int main()`                                  |
+| **Header Files Required**     | None                                               | `#include <iostream>`, `#include <vector>`    |
+| **Namespace Handling**        | Not required                                       | `using namespace std;`                        |
+| **Performance**               | Slower (interpreted)                               | Faster (compiled)                             |
+| **Syntax Verbosity**          | Shorter, cleaner                                   | More verbose                                  |
+

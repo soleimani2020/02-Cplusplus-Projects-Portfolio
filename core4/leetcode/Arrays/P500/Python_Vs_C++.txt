@@ -1,0 +1,17 @@
+| Concept               | C++ Version                                      | Python Version                        | Key Difference                          |
+| --------------------- | ------------------------------------------------ | ------------------------------------- | --------------------------------------- |
+| Class Definition      | `class Solution { ... };`                        | `class Solution:`                     | C++ needs braces `{}` and semicolon `;` |
+| Function Signature    | `vector<string> findWords(vector<string> words)` | `def findWords(self, words):`         | Python has no type declaration          |
+| Empty Check           | `if(words.empty()) return {};`                   | `if not words: return []`             | Python uses truthy check                |
+| Map Type              | `unordered_map<char,int>`                        | `dict`                                | Python dict is built-in                 |
+| Insert into Map       | `mp[c] = 1;`                                     | `mp[c] = 1`                           | No semicolon in Python                  |
+| Loop Over Indices     | `for(int i=0; i<words.size(); i++)`              | `for i in range(len(words))`          | Python uses `range()`                   |
+| Direct Loop (Cleaner) | Not as simple                                    | `for word in words:`                  | Python supports direct iteration        |
+| String Indexing       | `word[j]`                                        | `word[j]`                             | Same syntax                             |
+| Lowercase             | `tolower(c)`                                     | `c.lower()`                           | Python uses string method               |
+| Compare Values        | `mp[tolower(word[j])] != row`                    | `mp[word[j].lower()] != row`          | Slight syntax difference                |
+| Boolean Flag          | `bool skip = false;`                             | `skip = False`                        | Capitalization differs                  |
+| Add to Result         | `res.push_back(word);`                           | `result.append(word)`                 | Different container method              |
+| Return                | `return res;`                                    | `return result`                       | No semicolon in Python                  |
+| Main Function         | `int main() {}` required                         | `if __name__ == "__main__":` optional | Python doesn’t require main             |
+

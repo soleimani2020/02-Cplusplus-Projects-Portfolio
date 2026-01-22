@@ -1,0 +1,13 @@
+| Concept             | C++ Version                            | Python Version                        | Key Difference                        |
+| ------------------- | -------------------------------------- | ------------------------------------- | ------------------------------------- |
+| Function Signature  | `int findLHS(vector<int>& nums)`       | `def findLHS(self, nums):`            | C++ needs explicit types              |
+| Empty Check         | `if(nums.empty())`                     | `if not nums:`                        | Python is more concise                |
+| Hash Map Type       | `unordered_map<int,int>`               | `dict`                                | Python dict is built-in               |
+| Frequency Increment | `mp[num]++;`                           | `mp[num] += 1` (after check)          | C++ auto-initializes, Python does NOT |
+| Key Existence Check | `mp.count(x+1)`                        | `x+1 in mp`                           | Python syntax cleaner                 |
+| Loop Over Array     | `for(int j=0; j<nums.size(); j++)`     | `for i in range(len(nums)):`          | Python avoids index types             |
+| Alternative Loop    | `for(auto &p : mp)`                    | `for x in mp:`                        | Python simpler                        |
+| Max Update          | `max_len = max(max_len, pot_max_len);` | `max_len = max(max_len, pot_max_len)` | Same logic                            |
+| Return              | `return max_len;`                      | `return max_len`                      | Python no semicolon                   |
+| Memory Management   | Manual control                         | Automatic                             | Python garbage-collected              |
+

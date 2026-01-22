@@ -1,0 +1,13 @@
+| Feature / Step                   | C++                                                 | Python                                 | Notes / Key Differences                                           |
+| -------------------------------- | --------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------------- |
+| Class definition                 | `class Solution { ... };`                           | `class Solution:`                      | Python uses `:` and indentation                                   |
+| Method declaration               | `void merge(vector<int>& nums1, ...)`               | `def merge(self, nums1, m, nums2, n):` | Python uses `self` parameter, no return type                      |
+| Vector / List                    | `vector<int>`                                       | `list`                                 | Python lists are dynamic, C++ vectors require `#include <vector>` |
+| Array indexing                   | `nums1[i]`                                          | `nums1[i]`                             | Same syntax                                                       |
+| Loop syntax                      | `while(j >= 0){ ... }`                              | `while j >= 0:`                        | Python uses `:` and indentation                                   |
+| Pointer / index decrement        | `i--, j--, k--`                                     | `i -= 1, j -= 1, k -= 1`               | Python uses `-=` operator                                         |
+| Conditional comparison           | `if(i>=0 && nums1[i]>nums2[j])`                     | `if i>=0 and nums1[i]>nums2[j]:`       | Python uses `and` instead of `&&`                                 |
+| Printing result                  | `for(int i=0;i<nums1.size();i++) cout << nums1[i];` | `print(nums1)`                         | Python can print the whole list at once                           |
+| Passing number of valid elements | `m` and `n`                                         | `m` and `n`                            | Same concept, must count **valid elements only**                  |
+| Function return type             | `void`                                              | None / implicit                        | Python functions return `None` by default if not returning        |
+
