@@ -1,6 +1,6 @@
 # LeetCode Problem 14: Longest Common Prefix
 
-## Problem Description
+## 🧩 Problem Statement
 
 Write a function to find the **longest common prefix** string amongst an array of strings.  
 
