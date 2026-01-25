@@ -1,4 +1,4 @@
-# LeetCode Problem 1: Two Sum
+# LeetCode Problem 1: Two Sum (Easy)
 
 ## 🧩 Problem Statement
 
