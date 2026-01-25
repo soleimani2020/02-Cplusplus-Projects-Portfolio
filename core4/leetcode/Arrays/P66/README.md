@@ -1,4 +1,4 @@
-# LeetCode Problem 66: Plus One
+# LeetCode Problem 66: Plus One (Easy)
 
 ## 🧩 Problem Statement
 
