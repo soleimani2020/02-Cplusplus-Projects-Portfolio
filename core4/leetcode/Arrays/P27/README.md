@@ -1,4 +1,4 @@
-# LeetCode Problem 27: Remove Element
+# LeetCode Problem 27: Remove Element (Easy)
 
 ## 🧩 Problem Statement
 
