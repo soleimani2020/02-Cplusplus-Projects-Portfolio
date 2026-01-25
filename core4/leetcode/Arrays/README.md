@@ -1,1 +1,1 @@
-# Arrays Solutions for leetcode problems in object-oriented programming .
+# Arrays Solutions for leetcode problems using object-oriented programming C++.
