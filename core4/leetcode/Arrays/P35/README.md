@@ -1,4 +1,4 @@
-# LeetCode Problem 35: Search Insert Position
+# LeetCode Problem 35: Search Insert Position (Easy)
 
 ## 🧩 Problem Statement
 
