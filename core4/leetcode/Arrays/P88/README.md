@@ -21,3 +21,23 @@ Merge `nums2` into `nums1` so that `nums1` becomes a single array sorted in **no
 Input: nums1 = [1,2,3,0,0,0], m = 3
 nums2 = [2,5,6], n = 3
 Output: nums1 = [1,2,2,3,5,6]
+
+
+
+## ✅ Solution Approach
+
+We solve this **in-place** by filling `nums1` from the **end**:
+
+1. Use three pointers:  
+   - `p1` pointing at the last element of the initial `nums1` (`m-1`)  
+   - `p2` pointing at the last element of `nums2` (`n-1`)  
+   - `p` pointing at the last position of `nums1` (`m+n-1`)  
+
+2. Compare `nums1[p1]` and `nums2[p2]` and place the larger value at `nums1[p]`.  
+3. Move the pointers accordingly and continue until all elements are merged.  
+4. If `nums2` still has remaining elements, copy them to the start of `nums1`.
+
+**Time Complexity:** `O(m + n)`  
+**Space Complexity:** `O(1)` (in-place)
+
+---
