@@ -1,31 +1,23 @@
-# LeetCode Problem 88: Convert Sorted Array to Binary Search Tree
+# LeetCode Problem 88: Merge Sorted Array
 
 ## 🧩 Problem Statement
 
-You are given an integer array `nums` sorted in **ascending order**.  
-Convert it into a **height-balanced binary search tree (BST)**.
+You are given two integer arrays `nums1` and `nums2`, sorted in **non-decreasing order**, and two integers `m` and `n` representing the number of elements in `nums1` and `nums2` respectively.
 
-A height-balanced BST is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
+Merge `nums2` into `nums1` so that `nums1` becomes a single array sorted in **non-decreasing order**.
+
+**Note:**  
+- The final sorted array **should not be returned** by the function.  
+- Instead, it should be stored inside the array `nums1`.  
+- `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be merged, and the last `n` elements are set to `0` and should be ignored.  
+- `nums2` has a length of `n`.
 
 ---
 
 ## 🔹 Examples
 
 **Example 1:**  
-Input: nums = [-10,-3,0,5,9]
-Output: [0,-3,9,-10,null,5]
-Explanation: One possible height-balanced BST is shown.
 
-
-To construct a **height-balanced BST**:
-
-1. Choose the **middle element** of the array as the root.
-2. Recursively build the **left subtree** from the left half.
-3. Recursively build the **right subtree** from the right half.
-
-This ensures the tree remains balanced.
-
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(log n)` (recursion stack)
-
----
+Input: nums1 = [1,2,3,0,0,0], m = 3
+nums2 = [2,5,6], n = 3
+Output: nums1 = [1,2,2,3,5,6]
