@@ -1,4 +1,4 @@
-# LeetCode Problem 88: Merge Sorted Array
+# LeetCode Problem 88: Merge Sorted Array (EASY)
 
 ## 🧩 Problem Statement
 
