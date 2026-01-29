@@ -1,4 +1,4 @@
-# LeetCode Problem 108: Convert Sorted Array to Binary Search Tree
+# LeetCode Problem 108: Convert Sorted Array to Binary Search Tree (EASY)
 
 ## 🧩 Problem Statement
 
