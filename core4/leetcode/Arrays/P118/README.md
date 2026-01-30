@@ -21,3 +21,17 @@ Output:
 [1,3,3,1],
 [1,4,6,4,1]
 ]
+
+## ✅ Solution Approach
+
+1. Start with the first row `[1]`.
+2. For each new row:
+   - Set the first and last elements to `1`.
+   - Each inner element is the sum of the two elements above it.
+3. Repeat until `numRows` rows are generated.
+
+**Time Complexity:** `O(n²)`  
+**Space Complexity:** `O(n²)`
+
+
+Video Tutorial: https://www.youtube.com/watch?v=nFqeCXOJn0I
