@@ -1,4 +1,4 @@
-# LeetCode Problem 121: Best Time to Buy and Sell Stock
+# LeetCode Problem 121: Best Time to Buy and Sell Stock (EASY)
 
 ## 🧩 Problem Statement
 
