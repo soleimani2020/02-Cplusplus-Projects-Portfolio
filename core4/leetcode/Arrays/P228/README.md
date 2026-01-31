@@ -1,4 +1,4 @@
-# LeetCode Problem 228: Summary Ranges
+# LeetCode Problem 228: Summary Ranges (EASY)
 
 ## 🧩 Problem Statement
 
