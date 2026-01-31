@@ -15,3 +15,4 @@ Output: true
 **Example 2:**  
 Input: nums = [1,2,3,4]
 Output: false
+Video Tutorial: https://www.youtube.com/watch?v=0LIctkgJ2hQ
