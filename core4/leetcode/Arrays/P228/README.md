@@ -35,5 +35,5 @@ Explanation: The ranges are [0,1,2], [4,5], and [7].
 
 ---
 
-Video Tutorial : https://www.youtube.com/watch?v=ZHJDwbfqoa8
+Video Tutorial : [https://www.youtube.com/watch?v=ZHJDwbfqoa8](https://www.youtube.com/watch?v=ZHJDwbfqoa8)
 
