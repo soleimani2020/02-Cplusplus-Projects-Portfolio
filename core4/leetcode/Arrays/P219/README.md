@@ -1,4 +1,4 @@
-# LeetCode Problem 219: Contains Duplicate II
+# LeetCode Problem 219: Contains Duplicate II (EASY)
 
 ## 🧩 Problem Statement
 
