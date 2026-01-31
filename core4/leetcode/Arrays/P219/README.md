@@ -23,6 +23,6 @@ Input: nums = [1,0,1,1], k = 1
 Output: true
 
 ---
-Video Tutorial: https://www.youtube.com/watch?v=t6OXJLTmRaA
+Video Tutorial: [https://www.youtube.com/watch?v=t6OXJLTmRaA](https://www.youtube.com/watch?v=t6OXJLTmRaA)
 
 
