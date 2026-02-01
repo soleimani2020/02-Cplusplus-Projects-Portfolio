@@ -2,29 +2,37 @@
 #include <vector>
 using namespace std;
 
-class Solution_BF{
+class Solution_BF {
 public:
 
-    string longestCommonPrefix(vector<string>& strs){
+    string longestCommonPrefix(vector<string>& strs) {
        
+        // If the input vector is empty, return an empty string immediately
         if (strs.empty()) return "";
        
-        string prefix = "";
+        string prefix = "";  // Initialize an empty string to store the common prefix
        
-        for(int i=0; i<strs[0].size();i++){
-            char c_f = strs[0][i];
-            for(int j=1; j<strs.size();j++){
-                if (i>=strs[j].size() || c_f != strs[j][i]){
-                    return prefix;  // return inside the loop early if a mismatch exists !
+        // Loop over each character index of the first string only 
+        for (int i = 0; i < strs[0].size(); i++) {
+            char c_f = strs[0][i];  // Take the character from the first string at index i
+            
+            // Compare this character with the character at the same index in all other strings
+            for (int j = 1; j < strs.size(); j++) {
+                // If we've reached the end of any string or the character doesn't match
+                if (i >= strs[j].size() || c_f != strs[j][i]) {
+                    return prefix;  // Early return: current prefix is the longest common prefix
                 }
             }
-            prefix+=c_f;
+            
+            // If all strings have the same character at this index, add it to the prefix
+            prefix += c_f;
         }
        
-        return prefix;  // if all the characters match !
- 
+        // Return the prefix if all characters of the first string match in all strings
+        return prefix;
     }
 };
+
 
 
 class Solution{
@@ -105,4 +113,5 @@ int main(){
    
    
 }
+
 
