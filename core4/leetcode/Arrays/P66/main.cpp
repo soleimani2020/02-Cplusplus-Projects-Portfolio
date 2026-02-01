@@ -17,7 +17,9 @@ public:
         }
 
         // All digits were 9, insert 1 at the front
-        digits.insert(digits.begin(), 1);
+        vector<int> result(digits.size() + 1, 0);
+        result[0] = 1; // Set the first digit to 1
+        // Remaining digits are already 0
         return digits;
     }
 };
@@ -42,3 +44,4 @@ int main() {
 
     return 0;
 }
+
