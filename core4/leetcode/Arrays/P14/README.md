@@ -14,3 +14,6 @@ Output: "fl"
 Input: strs = ["dog","racecar","car"]
 Output: ""
 Explanation: There is no common prefix.
+
+
+Video Tutorial : https://www.youtube.com/watch?v=wtOQaovlvhY
