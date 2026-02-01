@@ -83,6 +83,8 @@ public:
         while(i < first.size() && i < last.size() &&  first[i]==last[i]){
             i++;
         }
+
+        // cout << "Number of elements in the prefix:" << i << endl
        
         string result ="";
         for(int k=0; k<i ; k++){
@@ -113,5 +115,6 @@ int main(){
    
    
 }
+
 
 
