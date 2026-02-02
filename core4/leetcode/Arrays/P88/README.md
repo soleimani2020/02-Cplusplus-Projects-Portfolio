@@ -21,3 +21,7 @@ Merge `nums2` into `nums1` so that `nums1` becomes a single array sorted in **no
 Input: nums1 = [1,2,3,0,0,0], m = 3
 nums2 = [2,5,6], n = 3
 Output: nums1 = [1,2,2,3,5,6]
+
+---
+
+Video Tutorial : https://www.youtube.com/watch?v=0-KuWOcHZuk
