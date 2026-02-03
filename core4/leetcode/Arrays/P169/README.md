@@ -30,3 +30,5 @@ We use the **Boyer-Moore Voting Algorithm** to find the majority element in **li
 
 **Time Complexity:** `O(n)`  
 **Space Complexity:** `O(1)`
+
+Video tutorial: https://www.youtube.com/watch?v=7pnhv842keE
