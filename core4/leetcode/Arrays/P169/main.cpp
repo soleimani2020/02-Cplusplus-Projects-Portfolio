@@ -66,26 +66,26 @@ public:
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
+        
         int candidate = nums[0];
         int count = 1;
-
-        for (int i = 1; i < nums.size(); i++) {
-            // If current candidate has no support, pick a new candidate
-            if (count == 0) {
+        
+        // Start from 1 to avoid double counting 
+        for(int i = 1; i < nums.size(); i++){
+            if (count == 0){
                 candidate = nums[i];
-            }
-
-            // Increment or decrement count
-            if (nums[i] == candidate) {
+                count = 1;  // reset the count to 1 for the new candidate 
+            } else if (nums[i] == candidate){
                 count++;
             } else {
                 count--;
             }
         }
-
+        
         return candidate;
     }
 };
+
 
 
 int main(){
@@ -105,3 +105,4 @@ int main(){
     
     
 }
+
