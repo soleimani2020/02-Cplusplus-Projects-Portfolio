@@ -23,7 +23,9 @@ Input
 Output
 [null, 1, -1, -3]
 
-Video Tutoral: https://www.youtube.com/shorts/UHhMXzpUXXI
 
 Video Tutorial : https://www.youtube.com/watch?v=xbYr9JOC2Lk
+
+Video Tutoral: https://www.youtube.com/shorts/UHhMXzpUXXI
+
 
