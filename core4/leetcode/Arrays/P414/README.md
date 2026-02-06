@@ -30,5 +30,5 @@ We solve this problem by:
 **Time Complexity:** O(n log n)  
 **Space Complexity:** O(n) (for storing distinct elements)
 
-Video Tutorial: 
+Video Tutorial: https://www.youtube.com/watch?v=SBsRk-gGBuE
 
