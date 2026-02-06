@@ -19,3 +19,5 @@ Output: [2]
 
 Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
 Output: [9,4] // or [4,9]
+
+Video Tutorial : https://www.youtube.com/watch?v=dTmYy5yCSX8
