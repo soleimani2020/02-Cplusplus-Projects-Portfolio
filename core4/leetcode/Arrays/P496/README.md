@@ -12,3 +12,4 @@ You are given two integer arrays `nums1` and `nums2`:
 ---
 
 Video Tutorial: https://www.youtube.com/watch?v=mJWQjJpEMa4
+Video Tutorial: https://www.youtube.com/watch?v=NKbExYwvjb0
