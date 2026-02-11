@@ -1,4 +1,4 @@
-# LeetCode Problem 496: Next Greater Element I (Easy)
+# LeetCode Problem 496: Next Greater Element I (*Easy*)
 
 ## 🧩 Problem Statement
 
