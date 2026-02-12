@@ -5,8 +5,11 @@
 Given a list of words, return the words that can be typed using letters of the alphabet **on only one row of a standard QWERTY keyboard**.
 
 - Keyboard rows:
+ 
 Row 1: "qwertyuiop"
+
 Row 2: "asdfghjkl"
+
 Row 3: "zxcvbnm"
 
 
