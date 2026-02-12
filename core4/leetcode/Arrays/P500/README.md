@@ -30,5 +30,5 @@ words = ["Hello","Alaska","Dad","Peace"]
 
 ---
 
-Video Tutorial: https://www.youtube.com/watch?v=lwUNh7T8TjY
+Video Tutorial: [https://www.youtube.com/watch?v=lwUNh7T8TjY](https://www.youtube.com/watch?v=AHmp2Vx8Gns)
   
