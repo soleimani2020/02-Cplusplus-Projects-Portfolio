@@ -31,13 +31,13 @@ words = ["Hello","Alaska","Dad","Peace"]
 
 🔥 Big Concept
 
-break
+break : Stops the loop completely.
 
-Stops the current loop completely.
 
-continue
 
-Skips just this iteration and moves to the next one
+continue : Skips just one iteration and moves to the next one
+
+
 
 
 ---
