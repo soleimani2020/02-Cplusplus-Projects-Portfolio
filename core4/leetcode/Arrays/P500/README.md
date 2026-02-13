@@ -27,6 +27,18 @@ words = ["Hello","Alaska","Dad","Peace"]
 
 ["Alaska","Dad"]
 
+**Something to note in this code:**
+
+🔥 Big Concept
+
+break
+
+Stops the current loop completely.
+
+continue
+
+Skips just this iteration and moves to the next one
+
 
 ---
 
