@@ -28,6 +28,7 @@ public:
             // first character of each word : Determine the reference row for the word
             int r = rows[tolower(words[i][0])];
             // A flag that will tell us if we need to skip this word because it contains letters from multiple rows.
+            // skip should be reset every time and therefore is defined inside the loop 
             bool skip = false;
     
                         
@@ -64,5 +65,6 @@ int main() {
     
     return 0;
 }
+
 
 
