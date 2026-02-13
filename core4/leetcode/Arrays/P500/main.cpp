@@ -43,8 +43,13 @@ public:
 
             
             if (skip) continue;  // skips the rest of the outer loop body for this word
-            
             ans.push_back(words[i]);
+
+            /*
+            if(!skip)
+                ans.push_back(words[i]);
+            */
+
 
         }
         
@@ -66,6 +71,7 @@ int main() {
     
     return 0;
 }
+
 
 
 
