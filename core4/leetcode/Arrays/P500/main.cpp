@@ -34,6 +34,7 @@ public:
                         
             for (int j = 1; j < words[i].size(); j++) { // start from 1
                 char c = words[i][j];
+                // we need to compare keyboard raws here and therefore two int are compared !
                 if (rows[tolower(c)] != r) {
                     skip = true;
                     break;
@@ -65,6 +66,7 @@ int main() {
     
     return 0;
 }
+
 
 
 
