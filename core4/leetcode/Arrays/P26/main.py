@@ -16,15 +16,6 @@ class Solution:
     
     
 
-
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     nums = [5,6,7,7,7,8]
     
@@ -35,5 +26,6 @@ if __name__ == "__main__":
     print(f"Number of unique elements is: {R}")
     print("New array:", nums[:R])
     
+
 
 
