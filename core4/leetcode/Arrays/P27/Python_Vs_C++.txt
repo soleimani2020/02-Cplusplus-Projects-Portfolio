@@ -1,0 +1,19 @@
+| Aspect                   | Python Version                         | C++ Version                                      |
+| ------------------------ | -------------------------------------- | ------------------------------------------------ |
+| **Class Definition**     | `class Solution:`                      | `class Solution { ... };`                        |
+| **Method Signature**     | `def RemoveElement(self, nums, val):`  | `int RemoveElement(vector<int>& nums, int val)`  |
+| **Type Declaration**     | Dynamic typing, no types required      | Static typing, explicit `int` and `vector<int>&` |
+| **Empty Check**          | `if not nums: return 0`                | `if (nums.empty()) return 0;`                    |
+| **Container Type**       | `list`                                 | `vector<int>`                                    |
+| **Loop Syntax**          | `for i in range(len(nums)):`           | `for (int i = 0; i < nums.size(); i++)`          |
+| **Element Access**       | `nums[i]`                              | `nums[i]`                                        |
+| **In-place Replacement** | `nums[k] = nums[i]`                    | `nums[k] = nums[i];`                             |
+| **Increment Pointer**    | `k += 1`                               | `k++;`                                           |
+| **Return Value**         | `return k`                             | `return k;`                                      |
+| **Printing Output**      | `print(f"...")` and slicing `nums[:k]` | `cout <<` with loop                              |
+| **Main Function**        | `if __name__ == "__main__":`           | `int main()`                                     |
+| **Semicolons Required?** | ❌ No                                   | ✅ Yes                                            |
+| **Memory Management**    | Automatic (garbage collector)          | Manual (STL vector manages memory)               |
+| **Syntax Verbosity**     | Shorter, more concise                  | More verbose, explicit types and braces          |
+| **Performance**          | Interpreted, slightly slower           | Compiled, faster                                 |
+
