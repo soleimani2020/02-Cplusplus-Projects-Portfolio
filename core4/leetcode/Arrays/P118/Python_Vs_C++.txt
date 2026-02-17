@@ -1,0 +1,37 @@
+| Feature                        | C++                             | Python                        |
+| ------------------------------ | ------------------------------- | ----------------------------- |
+| **Type**                       | Compiled language               | Interpreted language          |
+| **Execution Speed**            | Very fast ⚡                     | Slower than C++               |
+| **Typing**                     | Statically typed                | Dynamically typed             |
+| **Variable Declaration**       | Must declare type               | No type declaration needed    |
+| **Example Variable**           | `int x = 5;`                    | `x = 5`                       |
+| **Memory Management**          | Manual (new/delete)             | Automatic (Garbage Collector) |
+| **Syntax**                     | More complex                    | Simple & readable             |
+| **Code Length**                | More boilerplate                | Shorter code                  |
+| **OOP Support**                | Yes                             | Yes                           |
+| **Pointers**                   | Supported                       | Not directly supported        |
+| **STL / Libraries**            | Standard Template Library (STL) | Huge built-in libraries       |
+| **Use in Systems Programming** | Very common                     | Rare                          |
+| **Use in AI / ML**             | Limited                         | Very popular                  |
+| **Compilation Step**           | Required                        | Not required                  |
+| **Error Detection**            | Many errors at compile time     | Many errors at runtime        |
+| **Multithreading**             | Strong support                  | GIL limitation (CPython)      |
+
+
+| Concept           | C++ Version                                 | Python Version                 | Difference                              |
+| ----------------- | ------------------------------------------- | ------------------------------ | --------------------------------------- |
+| Class Definition  | `class Solution { ... };`                   | `class Solution:`              | Python uses indentation instead of `{}` |
+| Method Definition | `vector<vector<int>> generate(int numRows)` | `def generate(self, numRows):` | Python requires `self`                  |
+| Return Type       | Must declare return type                    | No return type declaration     | Python is dynamic                       |
+| Vector / List     | `vector<vector<int>> result;`               | `result = []`                  | Python lists are dynamic                |
+| Add Element       | `row.push_back(1);`                         | `row.append(1)`                | Different syntax                        |
+| Get Size          | `prev_row.size()`                           | `len(prev_row)`                | Different function                      |
+| For Loop          | `for(int i=1; i<numRows; i++)`              | `for i in range(1, numRows):`  | Python uses `range()`                   |
+| Index Access      | `prev_row[j]`                               | `prev_row[j]`                  | Same syntax                             |
+| Memory            | Manual control possible                     | Automatic (Garbage Collector)  | Python easier                           |
+| Compilation       | Must compile first                          | Run directly                   | Python simpler                          |
+| Printing          | `cout << val;`                              | `print(val)`                   | Simpler in Python                       |
+| Semicolons        | Required `;`                                | Not required                   | Python cleaner                          |
+| Braces            | `{}` required                               | Indentation-based              | Python enforces readability             |
+
+
