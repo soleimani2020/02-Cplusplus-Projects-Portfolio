@@ -8,35 +8,28 @@ public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
         vector<int> result;
 
-        // Loop over each element in nums1
         for (int i = 0; i < nums1.size(); i++) {
             int x = nums1[i];
-            bool found = false;
-
-            // Find x in nums2
             for (int j = 0; j < nums2.size(); j++) {
                 if (nums2[j] == x) {
-                    // Look for the next greater element
+                    bool HasGreater = false;
                     for (int k = j + 1; k < nums2.size(); k++) {
                         if (nums2[k] > x) {
                             result.push_back(nums2[k]);
-                            found = true;
+                            HasGreater = true;
                             break;
                         }
                     }
-                    break; // Stop searching nums2 once x is found
+                    if (!HasGreater) result.push_back(-1);
+                    break; // stop searching for x in nums2
                 }
-            }
-
-            // If no greater element found, push -1
-            if (!found) {
-                result.push_back(-1);
             }
         }
 
         return result;
     }
 };
+
 
 
 class Solution {
@@ -92,4 +85,5 @@ int main() {
 }
 
 // ans : {-1,3,-1}
+
 
