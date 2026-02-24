@@ -1,0 +1,14 @@
+| Aspect                | Python                                             | C++                                                    |
+| --------------------- | -------------------------------------------------- | ------------------------------------------------------ |
+| **Typing**            | Dynamic typing (no need to declare variable types) | Static typing (`int maxCount = 0;`)                    |
+| **Syntax Simplicity** | Very concise                                       | More verbose                                           |
+| **Loop Style**        | `for num in nums:`                                 | `for(int i=0; i<nums.size(); i++)` or range-based loop |
+| **Max Function**      | Built-in `max(a, b)`                               | `std::max(a, b)` from `<algorithm>`                    |
+| **Semicolons**        | ❌ Not required                                     | ✅ Required                                             |
+| **Braces `{}`**       | ❌ Not required (indentation-based)                 | ✅ Required                                             |
+| **Imports**           | Usually none needed                                | Must include headers (`<vector>`, `<algorithm>`)       |
+| **Performance**       | Slower (interpreted)                               | Faster (compiled)                                      |
+| **Memory Control**    | Automatic                                          | More explicit control                                  |
+| **Code Length**       | Shorter                                            | Longer                                                 |
+| **Compilation Step**  | No compilation                                     | Must compile before running                            |
+
