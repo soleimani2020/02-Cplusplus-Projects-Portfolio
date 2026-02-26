@@ -1,51 +1,46 @@
-class Solution_Recursion:
-    def floodFill(self, image , sr, sc, newColor):
+class Solution:
+    def intersection(self,nums1,nums2):
         
-        rows = len(image)
-        cols = len(image[0])
+        result=[]
         
-        initial_color = image[sr][sc] 
         
-        # base case :
-        if initial_color == newColor:
-            return image
+        nums1.sort()
+        nums2.sort()
+        
+        
+        i=0
+        j=0
+        # While elemnts left in i and j 
+        while(i<len(nums1) and j<len(nums2)):
+            if nums1[i] < nums2[j]:
+                i+=1 
+            
+            elif nums1[i] > nums2[j]:
+                j+=1 
+            
+            else :
+                # Equal 
+                if len(result)==0 or result[-1] != nums1[i]:
+                    result.append(nums1[i])
+                i+=1 
+                j+=1 
+            
+        return result
+        
             
         
-        image[sr][sc]  =  newColor
-            
-        # check nrighbors recursively
-        
-        if sr>0 and image[sr-1][sc]==initial_color:
-           self.floodFill(image , sr-1, sc, newColor) 
-
-        if sr<rows-1 and image[sr+1][sc]==initial_color:
-           self.floodFill(image , sr+1, sc, newColor)               
-
-        if sc>0 and image[sr][sc-1]==initial_color:
-           self.floodFill(image , sr, sc-1, newColor) 
-
-        if sc <cols-1 and image[sr][sc+1]==initial_color:
-           self.floodFill(image , sr, sc+1, newColor)  
-           
-           
-        return image 
 
 
 
 
-if __name__ == "__main__":
-    image = [
-        [1, 1, 1],
-        [1, 1, 0],
-        [1, 0, 1]
-    ]
+nums1 = [1, 2, 2, 1, 3]
+nums2 = [2, 2, 3]
 
-    sr, sc = 1, 1
-    newColor = 2
+# Assuming you have a Solution class with the intersection method
+sol = Solution()
+res = sol.intersection(nums1, nums2)
 
-    sol = Solution_Recursion()
-    res = sol.floodFill(image, sr, sc, newColor)
-
-    print("Flood Filled Image:")
-    for row in res:
-        print(" ".join(str(val) for val in row))
+print("Intersection:", end=" ")
+for x in res:
+    print(x, end=" ")
+print()
