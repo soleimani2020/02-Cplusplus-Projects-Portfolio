@@ -11,3 +11,5 @@ Given an integer array `nums`, return the length of its **longest harmonious sub
 
 ---
 Video Tutorial: https://www.youtube.com/watch?v=YhdG0lRZfIA
+
+Video Tutorial: https://www.youtube.com/shorts/-7IDTfQYQVc
