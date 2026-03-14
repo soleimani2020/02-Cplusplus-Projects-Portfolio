@@ -190,5 +190,126 @@ public:
 };
 
 
+MemoryManager* globalMemoryManager = nullptr;
+
+// ========================================
+// Override global new operator
+// ========================================
+
+void* operator new(size_t size){
+    if(!globalMemoryManager){
+        // Fail safely if the manager is not initialized
+        throw std::bad_alloc();
+    }
+    
+    
+    // Allocate memory using the global MemoryManager
+    return globalMemoryManager->allocateMemory(size);
+}
+
+
+
+
+
+// ========================================
+// Override global delete operator
+// ========================================
+void operator delete(void* ptr) noexcept {
+    if (ptr == nullptr) return;            // safe check
+    if (!globalMemoryManager) return;      // nothing to do if manager not initialized
+
+    globalMemoryManager->deallocateMemory(ptr);
+}
+
+
+// ========================================
+// Override global new[] operator
+// ========================================
+void* operator new[](size_t size) {
+    if (!globalMemoryManager) {
+        // Fail safely if the manager is not initialized
+        throw std::bad_alloc();
+    }
+
+    // Allocate array memory using the global MemoryManager
+    return globalMemoryManager->allocateArray(size);
+}
+
+
+// ========================================
+// Override global delete[] operator
+// ========================================
+void operator delete[](void* ptr) noexcept {
+    if (ptr == nullptr) return;           // Safe check
+    if (!globalMemoryManager) return;     // Nothing to do if manager not initialized
+
+    globalMemoryManager->deallocateArray(ptr);
+}
+
+
+int main() {
+    // Initialize the global memory manager
+    globalMemoryManager = new MemoryManager();
+
+    cout << "=== Memory Tracking Test ===" << endl;
+
+    // 1️⃣ Single-object allocation
+    cout << "\n--- Single-object allocation ---" << endl;
+    int* a = new int;
+    *a = 42;  // test the pointer
+    delete a;  // properly deallocate
+
+    // 2️⃣ Array allocation
+    cout << "\n--- Array allocation ---" << endl;
+    int* arr = new int[5];
+    for (int i = 0; i < 5; i++) arr[i] = i * 10;
+    delete[] arr;  // properly deallocate
+
+    // 3️⃣ Intentional memory leak
+    cout << "\n--- Intentional leak ---" << endl;
+    int* leak = new int[3];  // do NOT delete to test leak detection
+
+    // 4️⃣ More allocations for stress testing (optional)
+    // double* dArr = new double[10];
+    // delete[] dArr;
+
+    // 5️⃣ Clean up global memory manager
+    delete globalMemoryManager;
+    globalMemoryManager = nullptr;
+
+    cout << "\n=== Test Complete ===" << endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
