@@ -1,4 +1,6 @@
-# 🖼️ Image Smoother (3×3 Filter)
+# LeetCode Problem 661: Image Smoother (3×3 Filter)
+
+## 🧩 Problem Statement
 
 ## 📌 Overview
 The **Image Smoother** is a simple image processing algorithm that applies a **3 × 3 averaging filter** to smooth an image.
