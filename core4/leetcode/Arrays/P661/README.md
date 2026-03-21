@@ -27,3 +27,5 @@ If a cell is on the border and some neighbors are missing:
 - Compute the average based on **available cells only**.
 
 ---
+
+Video Tutorial: https://www.youtube.com/shorts/8EjO8k8ujPA
