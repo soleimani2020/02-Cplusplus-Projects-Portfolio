@@ -13,13 +13,8 @@
 ## 📖 Table of Contents
 - [Overview](#-overview)
 - [Features](#-features)
-- [Performance](#-performance)
 - [Installation](#-installation)
-- [Usage](#-usage)
 - [Complete Implementation](#-complete-implementation)
-- [Use Cases](#-use-cases)
-- [Building & Testing](#-building--testing)
-- [Contributing](#-contributing)
 - [License](#-license)
 - [Contact](#-contact)
 
