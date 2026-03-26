@@ -14,7 +14,6 @@
 - [Overview](#-overview)
 - [Features](#-features)
 - [Installation](#-installation)
-- [Complete Implementation](#-complete-implementation)
 - [License](#-license)
 - [Contact](#-contact)
 
