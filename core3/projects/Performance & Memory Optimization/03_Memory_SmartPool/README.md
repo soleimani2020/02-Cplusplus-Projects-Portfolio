@@ -77,7 +77,7 @@ cp MemoryPool.h /your-project/include/
 │  • Excellent cache locality                               │
 └─────────────────────────────────────────────────────────────┘
 
-MIT License
+## ✨ MIT License
 
 Copyright (c) 2024 Alireza Soleimani
 
