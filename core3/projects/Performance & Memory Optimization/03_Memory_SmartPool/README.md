@@ -40,42 +40,7 @@
 
 ---
 
-## 📦 Installation
 
-### Header-Only Usage
-Simply copy `MemoryPool.h` into your project:
-
-```bash
-git clone https://github.com/alirezasoleimani/SmartMemoryPool.git
-cd SmartMemoryPool
-cp MemoryPool.h /your-project/include/
-
-🏗️ Architecture
-┌─────────────────────────────────────────────────────────────┐
-│                    SmartMemoryPool                          │
-├─────────────────────────────────────────────────────────────┤
-│  ┌───────────────────────────────────────────────────────┐ │
-│  │           Pre-allocated Memory Block                  │ │
-│  │  ┌─────────┬─────────┬─────────┬─────────┬─────┐    │ │
-│  │  │ Block 0 │ Block 1 │ Block 2 │ Block 3 │ ... │    │ │
-│  │  └─────────┴─────────┴─────────┴─────────┴─────┘    │ │
-│  └───────────────────────────────────────────────────────┘ │
-│                            │                                │
-│                     ┌──────▼──────┐                        │
-│                     │  Free-List  │                        │
-│                     │  ┌───┐     │                        │
-│                     │  │ 0 ├──┐  │                        │
-│                     │  └───┘  │  │                        │
-│                     │  ┌───┐  │  │                        │
-│                     │  │ 1 │◄─┘  │                        │
-│                     │  └───┘     │                        │
-│                     └────────────┘                        │
-│                                                           │
-│  • O(1) allocate: remove first block from free-list      │
-│  • O(1) free: add block to front of free-list            │
-│  • No per-object overhead                                 │
-│  • Excellent cache locality                               │
-└─────────────────────────────────────────────────────────────┘
 
 ## ✨ MIT License
 
