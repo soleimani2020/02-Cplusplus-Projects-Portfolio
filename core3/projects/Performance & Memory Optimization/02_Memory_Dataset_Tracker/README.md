@@ -1,39 +1,52 @@
-# Memory Tracker C++ Assignment
+# Memory Dataset Tracker
 
-This repository contains a step-by-step C++ programming assignment to create a **Memory Tracking System**. The program demonstrates dynamic memory management, error detection, and memory leak prevention.
+**A high-level logical memory tracker for C++** that manages named `DataSet` objects with automatic allocation, deallocation, timestamping, and leak detection.
 
-## Objective
+It tracks datasets by name, handles dynamic integer arrays, provides detailed status reports, and ensures clean RAII-style cleanup.  
 
-Develop a C++ program that simulates a memory tracking system capable of:
+This module is the **Logical Dataset Tracker** for the larger [**04_Unified_Memory_Debugger**](https://github.com/yourusername/04_Unified_Memory_Debugger) project.
 
-* Allocating datasets dynamically
-* Deallocating datasets safely
-* Monitoring active datasets
-* Detecting possible memory leaks
+---
 
-## Tasks
+## 🔗 Role in the Unified Memory Debugger
 
-### Task 1: DataSet Structure
+This component provides **named object + logical dataset tracking**.  
+When merged with:
+- **Memory Allocator Tracker** (raw byte-level tracking)
+- **Smart_Pointer_Pool** (RAII-aware lifetime management)
 
-* Create a `DataSet` structure with:
+it enables **dual-level leak detection**:
+- Raw byte-level tracking
+- High-level named dataset + object tracking
 
-  * `string name`
-  * `int* data`
-  * `int size`
-  * `creationTime` (chrono)
-* Constructor should initialize `data` to `nullptr` and record creation time.
+Together they form a complete, production-grade memory debugging solution.
 
-### Task 2: MemoryTracker Class
+---
 
-* Create `MemoryTracker` class with:
+## ✨ Key Features
 
-  * `vector<DataSet*> activeSets`
-  * `int totalAllocations`
-  * `int totalDeallocations`
-* Constructor initializes counters and prints a message.
+- `DataSet` struct with name, dynamic `int` array, size, and creation timestamp
+- `MemoryTracker` class using `std::vector` for active dataset management
+- Safe `allocateDataSet()` with duplicate name and invalid size checks
+- Safe `deallocateDataSet()` with proper `delete[]` + `delete`
+- Real-time display of active datasets (name, size, age, memory address)
+- Built-in memory leak detection with allocation/deallocation counters
+- Automatic cleanup in destructor (RAII-compliant)
+- Comprehensive error handling and console feedback
 
-### Task 3: Allocate Dataset
+---
 
-* Method: `allocateDataSet(string name, int size)`
-* Validate size > 0 and check for duplicates
-* Allo
+## 🛠️ Build & Usage
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/memory-dataset-tracker.git
+cd memory-dataset-tracker
+
+# Build
+g++ -std=c++11 -O2 -Wall main.cpp -o dataset_tracker
+
+# Run
+./dataset_tracker
