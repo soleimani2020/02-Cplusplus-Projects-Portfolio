@@ -48,4 +48,4 @@ This project is part of a C++ portfolio demonstrating memory management expertis
 ## 👤 Author
 
 **Dr. Alireza Soleimani**  
-PhD in Biophysics | Computational Scientist | C++ & Algorithm Development
+PhD in Physics | Computational Scientist | C++ & Algorithm Development
