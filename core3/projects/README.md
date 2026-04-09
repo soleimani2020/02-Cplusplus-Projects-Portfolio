@@ -1,4 +1,4 @@
-# 🚀 Core3 Projects
+# 🚀 Core3 : Projects
 
 This directory contains a collection of **cool C++ projects**, organized into three categories:
 
