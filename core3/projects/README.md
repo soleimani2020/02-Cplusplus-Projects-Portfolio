@@ -1,54 +1,57 @@
 # 🚀 Core3 Projects
 
-This repository contains a collection of **cool projects** demonstrating **data structures and algorithms** in C++. Each project has its own directory under `core3/projects/`.
+This directory contains a collection of **cool C++ projects**, organized into three categories:
 
-## 📁 Projects
+- **Performance & Memory Optimization** – low‑level memory and performance work
+- **Algorithms & Problem Solving** – classic algorithmic challenges
+- **Simulations & Real‑world Models** – interactive simulations and models
 
-1. **😊 HappyNumberChecker**  
-   Detects whether a number is a happy number using **Floyd’s cycle detection algorithm**.
+All commits preserve their original timestamps – the category structure was applied retroactively without altering any commit dates or messages.
 
-2. **⚪ CircleSimulator**  
-   Simulates the properties and behavior of circles, including motion and dynamics.
+---
 
-3. **📅 LeapYearChecker**  
-   Checks whether a given year is a leap year.
+## ⚙️ Category 1: Performance & Memory Optimization
 
-4. **🕰 WorldClockSimulator**  
-   Simulates clocks across different time zones around the world.
+| Project | Description |
+|---------|-------------|
+| **🧠 Memory_Management_System** | Custom memory allocator and management. |
+| **📊 Memory_track_System** | Tracks and profiles memory usage. |
+| **⚡ SmartMemoryPool** | Efficient memory pooling for frequent allocations. |
 
-5. **📆 DayTypeIdentifier**  
-   Identifies the type of day (**weekday, weekend, or holiday**).
+---
 
-6. **🔁 PalindromeChecker**  
-   Checks whether a string or number is a palindrome.
+## 🧠 Category 2: Algorithms & Problem Solving
 
-7. **❌⭕ TicTacToeGame**  
-   Console-based Tic Tac Toe game for two players.
+| Project | Description |
+|---------|-------------|
+| **😊 HappyNumberChecker** | Detects happy numbers using Floyd’s cycle detection. |
+| **📅 LeapYearChecker** | Checks whether a given year is a leap year. |
+| **📆 DayTypeIdentifier** | Identifies weekdays, weekends, or holidays. |
+| **🔁 PalindromeChecker** | Tests if a string or number is a palindrome. |
+| **🪙 RomanNumeralConverter** | Converts numbers to/from Roman numerals. |
+| **❌⭕ TicTacToeGame** | Console‑based two‑player Tic‑Tac‑Toe. |
+| **🔢 LargeNumberStorage** | Handles arithmetic with arbitrarily large integers. |
+| **🔄 Sensor_Detector** | Simulates sensor data processing. |
 
-8. **📊 LineAnalyzer**  
-   Analyzes lines of text or data for statistics and patterns.
+---
 
-9. **🔢 LargeNumberStorage**  
-   Handles storage and management of large integers beyond standard limits.
+## 🎮 Category 3: Simulations & Real‑world Models
 
-10. **⏱ ClockSimulator**  
-    Simulates the behavior of a clock, including time increments and display.
+| Project | Description |
+|---------|-------------|
+| **⚪ CircleSimulator** | Geometry and circle‑related calculations. |
+| **⏱ ClockSimulator** | Digital / analog clock simulation. |
+| **🌍 WorldClockSimulator** | Clocks across multiple time zones. |
+| **🥤 FruitJuiceMachineSimulator** | Vending machine logic for juice dispenser. |
+| **📊 LineAnalyzer** | Analyzes line equations and intersections. |
 
-11. **🥤 FruitJuiceMachineSimulator**  
-    Simulates a fruit juice machine, including selection and dispensing logic.
-
-12. **🪙 RomanNumeralConverter**  
-    Converts numbers to and from Roman numerals.
+---
 
 ## ⚙️ Usage
 
-Each project contains its own README with instructions for running and testing.  
-Navigate to a project directory and follow the instructions for usage.
+Each project directory contains its own `README.md` with build and run instructions.  
+From the repository root, navigate to any project, e.g.:
 
-## 🤝 Contribution
-
-Feel free to **fork this repository** and add your own improvements or new projects. Pull requests are welcome!
-
-## 📄 License
-
-MIT
+```bash
+cd core3/projects/Performance\ \&\ Memory\ Optimization/SmartMemoryPool
+make && ./main
