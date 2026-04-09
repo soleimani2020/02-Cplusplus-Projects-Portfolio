@@ -1,59 +1,53 @@
-# 🧠 SmartMemoryPool
+# Smart Pointer Pool
 
-> A high-performance, zero-fragmentation memory pool allocator for C++ that eliminates dynamic allocation overhead
+**A modern C++ connection pool using smart pointers** that demonstrates RAII, `shared_ptr`, `weak_ptr`, and `unique_ptr` with custom deleters.
 
-[![C++](https://img.shields.io/badge/C%2B%2B-11%2B-blue.svg)](https://isocpp.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey)]()
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![Code Size](https://img.shields.io/badge/size-~200%20lines-blue.svg)]()
+It implements a reusable pool of `DatabaseConnection` objects, tracks usage with an `inUse` flag, and safely manages resource lifetimes without manual `new`/`delete`.  
+
+This module is the **RA‑II aware smart pointer pool** for the larger [**04_Unified_Memory_Debugger**](https://github.com/yourusername/04_Unified_Memory_Debugger) project.
 
 ---
 
-## 📖 Table of Contents
-- [Overview](#-overview)
-- [Features](#-features)
-- [Installation](#-installation)
-- [License](#-license)
-- [Contact](#-contact)
+## 🔗 Role in the Unified Memory Debugger
+
+This component provides **smart pointer‑based resource management** and a **connection pool** example.  
+When merged with:
+- **Memory Allocator Tracker** (raw byte‑level tracking)
+- **Logical Dataset Tracker** (named object + logical leak detection)
+
+it demonstrates:
+- How modern C++ (`shared_ptr`, `unique_ptr`, `weak_ptr`) eliminates manual memory errors
+- How a pool can be integrated with global allocation tracking (via overridden `new`/`delete`)
+- Dual‑level leak detection (raw bytes + logical objects) alongside RAII containers
+
+Together they form a complete, production‑grade memory debugging and resource management suite.
 
 ---
 
-## 📖 Overview
+## ✨ Key Features
 
-**SmartMemoryPool** is a production-ready memory management solution that pre-allocates a contiguous memory block and handles fixed-size object allocations internally. By bypassing the system heap, it achieves **O(1) allocation times**, **zero fragmentation**, and **predictable performance** — making it ideal for real-time systems, game engines, and embedded applications where every microsecond counts.
-
----
-
-## ✨ Features
-
-| Feature | Benefit |
-|---------|---------|
-| ⚡ **O(1) Allocation** | Constant-time operations regardless of pool size |
-| 🧩 **Zero Fragmentation** | Contiguous memory layout prevents heap fragmentation |
-| 🎯 **Fixed-Size Optimization** | Perfect for homogeneous object types |
-| 🔒 **Thread-Safe Option** | Optional mutex protection for multi-threaded environments |
-| 📦 **RAII Compatible** | Works seamlessly with modern C++ idioms |
-| 🪶 **Minimal Overhead** | Only 8-16 bytes overhead per pool, zero per allocation |
-| 🚀 **Cache Friendly** | Excellent memory locality improves performance |
-| 🔧 **Simple API** | Just allocate() and free() - no learning curve |
+- `DatabaseConnection` class with RAII constructor/destructor (auto‑disconnect)
+- `ConnectionManager` that maintains a pool of `shared_ptr<DatabaseConnection>`
+- `getConnection()` returns an available connection and marks it `inUse`
+- `releaseConnection()` returns the connection to the pool
+- Demonstration of `shared_ptr` reference counting and `weak_ptr` for non‑owning observation
+- `unique_ptr` with custom deleter for `FILE*` (C‑style file handling)
+- Console output for all operations (connect, disconnect, query, reference counts)
+- No manual `new`/`delete` – fully modern C++
 
 ---
 
+## 🛠️ Build & Usage
 
+### Quick Start
 
-## ✨ MIT License
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/smart-pointer-pool.git
+cd smart-pointer-pool
 
-Copyright (c) 2024 Alireza Soleimani
+# Build
+g++ -std=c++11 -O2 -Wall main.cpp -o smart_pool
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-
+# Run
+./smart_pool
