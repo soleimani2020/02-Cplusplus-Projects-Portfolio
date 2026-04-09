@@ -1,110 +1,42 @@
-# Memory Management System (C++)
+# Memory Allocator Tracker
 
-## Overview
+**A lightweight, low-level memory tracker for C++** that overrides the global `new`/`delete` operators to intercept **every** allocation.
 
-The **Memory Management System** is a C++ project that simulates how operating systems manage memory allocation and deallocation.
-It demonstrates fundamental concepts of memory handling such as allocation strategies, tracking memory usage, and avoiding memory leaks.
+It records size, address, and timestamp for each allocation, automatically detects leaks, and outputs a clean, human-readable log.  
 
-This project is designed as a learning tool to understand **low-level memory management concepts** in C++ and how systems efficiently allocate resources.
-
----
-
-## Features
-
-* Simulated memory allocation and deallocation
-* Tracking of allocated memory blocks
-* Detection of potential memory leaks
-* Efficient memory usage monitoring
-* Console-based interface for interaction
-* Clear modular C++ design
+This module is the **raw memory tracking foundation** for the larger [**04_Unified_Memory_Debugger**](https://github.com/yourusername/04_Unified_Memory_Debugger) project.
 
 ---
 
-## Project Structure
+## 🔗 Role in the Unified Memory Debugger
 
-```
-Memory_Management_System/
-│
-├── main.cpp        # Main program implementation
-└── README.md       # Project documentation
-```
+This component provides **byte-accurate allocation data**.  
+When merged with **Logical_Dataset_Tracker** and **Smart_Pointer_Pool**, it enables **dual-level leak detection** (raw bytes + named objects) and RAII-aware tracking.
 
 ---
 
-## Concepts Demonstrated
+## ✨ Key Features
 
-This project explores important computer science concepts such as:
-
-* Dynamic Memory Allocation
-* Memory Tracking
-* Heap Management
-* Resource Management
-* Basic Operating System Memory Concepts
-
----
-
-## Example Workflow
-
-1. Start the program
-2. Allocate memory blocks
-3. Track current memory usage
-4. Free allocated memory
-5. Detect potential memory leaks
+- Overrides `new`, `delete`, `new[]`, and `delete[]` (single-object and array versions)
+- Tracks all active allocations in a high-performance `std::unordered_map`
+- Automatic leak detection with full details (address, size, allocation timestamp)
+- Detailed logging to `memory_log.txt`
+- Prints concise memory usage statistics on program exit
+- Zero runtime overhead when disabled (compile-time flag)
 
 ---
 
-## Technologies Used
+## 🛠️ Build & Usage
 
-* C++
-* Standard Template Library (STL)
-
----
-
-## How to Compile
-
-Using **g++**:
+### Quick Start
 
 ```bash
-g++ main.cpp -o memory_manager
-```
+# Clone the repository
+git clone https://github.com/yourusername/memory-allocator-tracker.git
+cd memory-allocator-tracker
 
-Run the program:
+# Build
+g++ -std=c++11 -O2 -Wall main.cpp -o alloc_tracker
 
-```bash
-./memory_manager
-```
-
----
-
-## Learning Goals
-
-This project helps developers understand:
-
-* How memory allocation works internally
-* Why memory leaks occur
-* How to track and manage memory safely
-* Basic system-level programming concepts
-
----
-
-## Future Improvements
-
-* Implement multiple allocation strategies (First Fit, Best Fit, Worst Fit)
-* Add visualization of memory blocks
-* Support for fragmentation simulation
-* Add unit tests
-* Extend to multi-file modular architecture
-
----
-
-## Author
-
-Alireza Soleimani
-
-PhD in Biophysics | Computational Scientist | C++ & Algorithm Development
-
----
-
-## License
-
-This project is for educational and portfolio purposes.
+# Run
+./alloc_tracker
