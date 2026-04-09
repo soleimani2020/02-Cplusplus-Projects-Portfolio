@@ -1,4 +1,4 @@
-# Smart Pointer Pool
+# Memory Smart Pool
 
 **A modern C++ connection pool using smart pointers** that demonstrates RAII, `shared_ptr`, `weak_ptr`, and `unique_ptr` with custom deleters.
 
