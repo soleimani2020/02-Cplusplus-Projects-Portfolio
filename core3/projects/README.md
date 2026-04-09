@@ -1,4 +1,4 @@
-# Core3 Projects
+# Core3 : Projects
 
 This directory contains all C++ projects organized into three categories based on their primary focus: performance/memory optimization, algorithms, and real‑world simulations.
 
