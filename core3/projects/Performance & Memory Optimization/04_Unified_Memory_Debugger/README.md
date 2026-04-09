@@ -13,8 +13,4 @@ The unified debugger provides:
 - Object lifetime monitoring
 - Connection pooling with automatic cleanup
 
-## Build & Run
 
-```bash
-make
-./unified_memory_debugger
