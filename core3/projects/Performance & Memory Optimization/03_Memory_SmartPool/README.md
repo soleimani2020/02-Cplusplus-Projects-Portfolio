@@ -4,7 +4,7 @@
 
 It implements a reusable pool of `DatabaseConnection` objects, tracks usage with an `inUse` flag, and safely manages resource lifetimes without manual `new`/`delete`.  
 
-This module is the **RA‑II aware smart pointer pool** for the larger [**04_Unified_Memory_Debugger**](https://github.com/yourusername/04_Unified_Memory_Debugger) project.
+This module is the **RAII‑aware smart pointer pool** for the larger [**04_Unified_Memory_Debugger**](https://github.com/soleimani2020/02-Cplusplus-Projects-Portfolio/tree/main/core3/projects/Performance%20%26%20Memory%20Optimization/04_Unified_Memory_Debugger) project.
 
 ---
 
