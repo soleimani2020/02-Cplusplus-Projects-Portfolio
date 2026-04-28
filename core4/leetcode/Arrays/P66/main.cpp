@@ -20,7 +20,7 @@ public:
         vector<int> result(digits.size() + 1, 0);
         result[0] = 1; // Set the first digit to 1
         // Remaining digits are already 0
-        return digits;
+        return result;
     }
 };
 
