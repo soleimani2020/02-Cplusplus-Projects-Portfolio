@@ -13,3 +13,5 @@ Given an integer array `nums`, **move all 0's to the end** of the array while **
 **Example 1:**  
 Input: nums = [0,1,0,3,12]
 Output: [1,3,12,0,0]
+
+video Tutorial : https://www.youtube.com/watch?v=k5lIW5XxC7g
