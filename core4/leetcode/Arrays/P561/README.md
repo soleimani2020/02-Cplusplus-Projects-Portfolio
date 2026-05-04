@@ -12,7 +12,6 @@ Return the maximized sum.
 ## Example 1
 
 ### Input
-```text
 nums = [1, 4, 3, 2]
 
 
@@ -27,3 +26,9 @@ All possible pairings:
 (1, 2), (3, 4) → 1 + 3 = 4
 
 👉 Maximum possible sum = 4
+
+
+---
+
+
+Video Tutorial : https://www.youtube.com/watch?v=WS17y3YCPvw
