@@ -18,12 +18,12 @@ Return an array `answer` of size `n` where `answer[i]` is the rank of the `i-th`
 ## Example
 
 ### Input
-```text
 score = [5, 4, 3, 2, 1]
 
 OUTPUT: 
 ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
 
+---
 
 Video Tutorial : 
 https://www.youtube.com/watch?v=bHf8PeThnhg
