@@ -14,3 +14,16 @@ Return the maximized sum.
 ### Input
 ```text
 nums = [1, 4, 3, 2]
+
+
+Output
+4
+Explanation
+
+All possible pairings:
+
+(1, 4), (2, 3) → 1 + 2 = 3
+(1, 3), (2, 4) → 1 + 2 = 3
+(1, 2), (3, 4) → 1 + 3 = 4
+
+👉 Maximum possible sum = 4
