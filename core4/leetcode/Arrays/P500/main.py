@@ -36,11 +36,36 @@ class Solution:
         
 
 
-
-
-
-
-
+# _  -1  -
+class Solution:
+    def findWords(self, words: List[str]) -> List[str]:
+        mp={}
+        for c in "qwertyuiop": mp[c]=1
+        for c in "asdfghjkl" : mp[c]=2
+        for c in "zxcvbnm"   : mp[c]=3 
+        
+        
+        result=[]
+        for word in words:
+            ref=mp[word[0].lower()]
+            skip=False 
+            for c in word:
+                if mp[c.lower()] != ref:
+                    skip=True
+                    break
+                
+            if skip: continue
+            result.append(word)
+        
+        return result 
+            
+        
+            
+            
+                    
+                
+        
+            
 
 
 
