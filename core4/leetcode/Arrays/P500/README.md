@@ -47,10 +47,13 @@ continue : Skips just one iteration and moves to the next one
 For each word:
 
 check characters
+
     if mismatch → stop checking (break)
 
 after checking:
+
     if invalid → skip entire word (continue)
+    
     else → add to result
 
 ---
