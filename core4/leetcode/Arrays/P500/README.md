@@ -42,5 +42,19 @@ continue : Skips just one iteration and moves to the next one
 
 ---
 
+🔥 Clean mental model
+
+For each word:
+
+check characters
+    if mismatch → stop checking (break)
+
+after checking:
+    if invalid → skip entire word (continue)
+    else → add to result
+
+---
+    
+
 Video Tutorial: [https://www.youtube.com/watch?v=lwUNh7T8TjY](https://www.youtube.com/watch?v=AHmp2Vx8Gns)
   
