@@ -28,3 +28,7 @@ Given an integer array `candyType` of length `n`, return the **maximum number of
 candyType = [1,1,2,2,3,3]
 Ouput:
 3
+
+Video Tutorial : 
+
+https://www.youtube.com/watch?v=1IzCRCcK17A
