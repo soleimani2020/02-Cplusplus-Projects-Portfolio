@@ -47,10 +47,9 @@ public:
         for(int num : nums){
             mp[num]++;
         }
+
         
         int max_len=0;
-        
-
         for(int j=0; j<nums.size(); j++){
             int x = nums[j];
             if (mp.count(x+1)){
@@ -60,18 +59,9 @@ public:
             
         }
         
-
-        
         return max_len;
             
-        
-        
-        
     }
-    
-    
-    
-    
 };
 
 
