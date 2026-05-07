@@ -17,3 +17,5 @@ nums = [1,2,2,3,1]
 Video Tutorial : 
 
 https://www.youtube.com/shorts/C35of-gyNTE
+
+https://www.youtube.com/watch?v=HDJIfiUJCyI
