@@ -19,8 +19,10 @@ public:
                 mp[x] = {1, index, index}; // first occurrence
             }
         }
-       
-       
+
+
+        // entry.first  → number
+        // entry.second → {count, first, last}
         int degree = 0;
         for(const auto& entry  : mp){
             if (entry.second[0]  > degree){
