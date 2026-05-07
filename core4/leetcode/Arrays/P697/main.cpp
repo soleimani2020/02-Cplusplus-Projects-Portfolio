@@ -23,6 +23,7 @@ public:
 
         // entry.first  → number
         // entry.second → {count, first, last}
+        // entry.second[0] → {count}
         int degree = 0;
         for(const auto& entry  : mp){
             if (entry.second[0]  > degree){
