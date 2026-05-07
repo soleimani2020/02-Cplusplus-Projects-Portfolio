@@ -80,6 +80,49 @@ public:
     }
 };
 
+class Solution {
+public:
+    vector<vector<int>> imageSmoother(vector<vector<int>>& img) {
+        
+        int n = img.size();
+        int m = img[0].size();
+        vector<vector<int>> smoothed(n, vector<int>(m, 0));
+        
+        for(int i =0 ; i < n ; i++){
+            for(int j =0 ; j < m ; j++){
+                
+                int count=0;
+                int sum=0;
+                
+                for(int dx= -1; dx <=1 ; dx++){
+                    for(int dy=-1; dy <=1 ; dy++){
+                        
+                        int ni = i + dx;
+                        int nj = j + dy;
+                        
+                        // Check boundaries
+                        if(ni >=0 && ni <n && nj >=0 && nj <m){
+                            count++;
+                            sum+=img[ni][nj];
+
+                        }
+                    }
+                }
+                
+
+
+                smoothed[i][j] = sum /count;
+                
+
+                
+            }
+        }
+        
+        return smoothed;
+        
+      
+    }
+};
 
 
 
