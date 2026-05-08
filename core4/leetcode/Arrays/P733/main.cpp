@@ -3,47 +3,54 @@
 #include <algorithm>
 #include <queue>
 using namespace std;
-
 class Solution_Recursion {
 public:
-    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
-        
-        
+
+    void dfs(vector<vector<int>>& image,
+             int sr,
+             int sc,
+             int originalColor,
+             int newColor,
+             int rows,
+             int cols) {
+
+        // 1. Boundary check
+        if (sr < 0 || sr >= rows || sc < 0 || sc >= cols)
+            return;
+
+        // 2. Stop if not original color
+        if (image[sr][sc] != originalColor)
+            return;
+
+        // 3. Fill current cell
+        image[sr][sc] = newColor;
+
+        // 4. Recurse in 4 directions
+        dfs(image, sr - 1, sc, originalColor, newColor, rows, cols);
+        dfs(image, sr + 1, sc, originalColor, newColor, rows, cols);
+        dfs(image, sr, sc - 1, originalColor, newColor, rows, cols);
+        dfs(image, sr, sc + 1, originalColor, newColor, rows, cols);
+    }
+
+    vector<vector<int>> floodFill(vector<vector<int>>& image,
+                                   int sr,
+                                   int sc,
+                                   int color) {
+
         int rows = image.size();
         int cols = image[0].size();
-        
-        // Base Case 
-        if (image[sr][sc] == color){
-            return image; // Do Nothing 
-        }
-            
-            
+
         int originalColor = image[sr][sc];
-        
-        image[sr][sc] = color;
-        
-        // Up
-        if(sr>0 && image[sr-1][sc]==originalColor)
-            floodFill(image, sr-1, sc, color);
-            
-        // Down
-        if(sr<rows-1 && image[sr+1][sc]==originalColor)
-            floodFill(image, sr+1, sc, color);
-            
-        // Left
-        if(sc>0 && image[sr][sc-1]==originalColor)
-            floodFill(image, sr, sc-1, color);
-            
-        // Right
-        if(sc<cols-1 && image[sr][sc+1]==originalColor)
-            floodFill(image, sr, sc+1, color);  
-            
-        
+
+        // Edge case: nothing to change
+        if (originalColor == color)
+            return image;
+
+        dfs(image, sr, sc, originalColor, color, rows, cols);
+
         return image;
-  
     }
 };
-
 
 class Solution_BFS {
 public:
