@@ -26,24 +26,19 @@ Video Tutorial (DFS): https://www.youtube.com/watch?v=JI_e2RzARbM
 
 Video Tutorial (Recursion): https://www.youtube.com/watch?v=HpY6xuPfUjY
 
---- Algorithm 
+## 🔹 Algorithm 
 
 floodFill():
 
     get original color
-    
     if already same → return
-    
     start dfs(sr, sc)
 
 dfs(r, c):
 
     if invalid → return
-    
     if not original color → return
-    
     paint cell
-    
     dfs(4 directions)
 
     
