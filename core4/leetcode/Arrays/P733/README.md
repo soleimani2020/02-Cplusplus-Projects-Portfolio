@@ -11,7 +11,20 @@ You are given three integers `sr`, `sc`, and `newColor`. Perform a **flood fill*
 
 Return the **modified image** after performing the flood fill.
 
----
+--- Algorithm 
+
+floodFill():
+    get original color
+    if already same → return
+    start dfs(sr, sc)
+
+dfs(r, c):
+    if invalid → return
+    if not original color → return
+    paint cell
+    dfs(4 directions)
+
+    
 
 ## 🔹 Examples
 
