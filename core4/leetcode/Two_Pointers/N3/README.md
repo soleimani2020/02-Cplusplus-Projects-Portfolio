@@ -24,9 +24,13 @@ Input: s = "aca"
 
 
 
-Video Tutorial : https://www.youtube.com/watch?v=wX3-411uJH0&t=562s
 
 Output: True
 
 Explanation:
 The string "aca" is already a palindrome.
+
+
+
+Video Tutorial : https://www.youtube.com/watch?v=wX3-411uJH0&t=562s
+
