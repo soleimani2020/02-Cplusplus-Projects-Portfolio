@@ -1,28 +1,24 @@
-# Reverse String
+# LeetCode Problem 344: Reverse String (Easy)
 
-**Difficulty:** Easy  
-**Topics:** Two Pointers, String, Array  
-**Companies:** LeetCode  
+## 🧩 Problem Statement
 
-## Problem Description
-
-You are given an array of characters that represents a string `s`.
+You are given an array of characters `s` that represents a string.
 
 Write a function that reverses the string.
 
-The reversal must be performed **in-place**, meaning you must modify the input array directly without using extra memory.
+The reversal must be done **in-place**, meaning you must modify the input array directly without using extra memory.
 
 ### Constraints
+- `1 <= s.length <= 10^5`
+- `s[i]` is a printable ASCII character.
+- You must use **O(1) extra memory**.
 
-- The input array contains only printable ASCII characters.
-- You must use **O(1)** extra memory.
-- The solution should modify the original array.
+### Example
 
----
+```python
+Input: s = ["n","e","e","t"]
 
-## Example 1
+Output: ["t","e","e","n"]
 
-### Input
-
-```text
-s = ["n","e","e","t"]
+Explanation: 
+The original string "neet" is reversed to "teen".
