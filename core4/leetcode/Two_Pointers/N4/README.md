@@ -42,3 +42,7 @@ word2: x y z
 
 Result:
 a x b y c z
+
+---
+
+Video: https://www.youtube.com/watch?v=qq-AqEPKsI8
