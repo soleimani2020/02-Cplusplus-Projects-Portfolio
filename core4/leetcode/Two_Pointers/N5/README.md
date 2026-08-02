@@ -59,4 +59,7 @@ The first five elements contain all unique values.
 
 
 ## 🎥 Video Tutorial
+
+https://www.youtube.com/watch?v=oMr9lehS7Us
+
 https://www.youtube.com/watch?v=DEJAZBq0FDA](https://www.youtube.com/watch?v=oMr9lehS7Us
