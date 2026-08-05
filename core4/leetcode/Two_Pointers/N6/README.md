@@ -21,6 +21,8 @@ Return the indices of the two numbers as an array `[index1, index2]`, where:
 
 ---
 
+Video Tutorial : https://www.youtube.com/watch?v=Bk6Im9h6ouA&t=615s
+
 ## Example
 
 ```python
