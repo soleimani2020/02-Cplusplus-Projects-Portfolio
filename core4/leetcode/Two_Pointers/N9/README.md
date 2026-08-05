@@ -13,23 +13,27 @@ Return the maximum amount of water a container can store.
 
 ---
 
-## Example 1
+# Example 1
 
-### Input
+## Input
 
 ```text
 height = [1,8,6,2,5,4,8,3,7]
 ```
 
-### Output
+## Output
 
 ```text
 49
 ```
 
-### Explanation
+## Explanation
 
-The container is formed by the lines at index `1` and index `8`.
+The optimal container is formed by:
+
+```text
+index 1 and index 8
+```
 
 Height:
 
@@ -51,15 +55,15 @@ Area:
 
 ---
 
-## Example 2
+# Example 2
 
-### Input
+## Input
 
 ```text
 height = [1,1]
 ```
 
-### Output
+## Output
 
 ```text
 1
@@ -67,7 +71,7 @@ height = [1,1]
 
 ---
 
-## Constraints
+# Constraints
 
 - `n == height.length`
 - `2 <= n <= 100000`
@@ -79,49 +83,80 @@ height = [1,1]
 
 ## Observation
 
-The amount of water between two lines is:
+The amount of water stored between two lines is:
 
 \[
 Area = min(height[left], height[right]) \times (right-left)
 \]
 
-A brute-force solution checks every pair:
+A brute-force approach checks every pair of lines:
 
 \[
 O(n^2)
 \]
 
-which is too slow.
-
----
-
-## Two Pointer Strategy
-
-Start with:
-
-- `left` pointer at the beginning.
-- `right` pointer at the end.
-
-The width is maximum initially.
-
-At each step:
-
-1. Calculate current area.
-2. Update maximum area.
-3. Move the pointer with the smaller height.
-
-Why?
-
-The shorter line limits the amount of water. Moving the taller line cannot increase the height, so we move the shorter one hoping to find a taller boundary.
-
----
-
-## Example
-
-Input:
+which is too slow for:
 
 ```text
-[1,8,6,2,5,4,8,3,7]
+n = 100000
+```
+
+---
+
+# Two Pointer Strategy
+
+Initialize:
+
+```text
+left = 0
+right = n - 1
+```
+
+The initial width is maximum.
+
+At every step:
+
+1. Calculate the current area.
+2. Update the maximum area.
+3. Move the pointer with the smaller height.
+
+---
+
+## Why move the smaller height?
+
+The shorter line limits the amount of water.
+
+Example:
+
+```text
+height[left] = 3
+height[right] = 8
+```
+
+The container height is:
+
+```text
+min(3,8) = 3
+```
+
+Moving the taller line:
+
+```text
+8 -> another value
+```
+
+cannot increase the height limit.
+
+Therefore, we move the shorter line hoping to find a taller boundary.
+
+---
+
+# Algorithm Walkthrough
+
+Example:
+
+```text
+height = [1,8,6,2,5,4,8,3,7]
 ```
 
 Initial:
@@ -134,7 +169,11 @@ right = 8
 Area:
 
 ```text
-min(1,7) * 8 = 8
+min(1,7) * (8-0)
+
+= 1 * 8
+
+= 8
 ```
 
 Since:
@@ -143,7 +182,11 @@ Since:
 height[left] < height[right]
 ```
 
-move `left`.
+move:
+
+```text
+left++
+```
 
 Continue until:
 
@@ -151,20 +194,17 @@ Continue until:
 left >= right
 ```
 
-The maximum area found is:
+Maximum area:
 
 ```text
 49
 ```
 
-
----
-
 # 🔍 Complexity Analysis
 
 ## Time Complexity
 
-Each pointer moves only once:
+Each pointer moves at most `n` times:
 
 \[
 \boxed{O(n)}
@@ -184,14 +224,15 @@ Only constant variables are used:
 
 # ✅ Key Takeaways
 
-- The area is limited by the shorter line.
-- Two pointers reduce the brute-force `O(n^2)` solution to `O(n)`.
-- Always move the pointer pointing to the smaller height.
-- The maximum width is obtained by starting with both ends.
+- The shorter line determines the container height.
+- Starting from both ends gives maximum width.
+- Two pointers reduce the solution from `O(n^2)` to `O(n)`.
+- Always move the pointer with the smaller height.
+- The algorithm works in-place without extra memory.
 
 ---
 
-## Topics
+# Topics
 
 - Array
 - Two Pointers
@@ -199,7 +240,7 @@ Only constant variables are used:
 
 ---
 
-## Company Tags
+# Company Tags
 
 - Amazon
 - Google
@@ -210,14 +251,21 @@ Only constant variables are used:
 
 ---
 
-## Follow Up
+# Follow Up
 
 Can you solve it without using extra memory?
 
-Yes. The two-pointer approach uses:
+Yes.
 
-- Time: `O(n)`
-- Space: `O(1)`
+The two-pointer approach achieves:
 
-  
-Video Tutorial: https://www.youtube.com/watch?v=w7ftYsZtIbs&t=432s
+```text
+Time Complexity:  O(n)
+Space Complexity: O(1)
+```
+
+---
+
+# Video Tutorial
+
+https://www.youtube.com/watch?v=w7ftYsZtIbs&t=432s
