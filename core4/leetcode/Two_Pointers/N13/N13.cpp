@@ -7,7 +7,7 @@ public:
         
         for(int i=0 ; i < n ; i+=2*k){
             
-            int end = i + k ;  // This is the LAST index plus one (Exclusive)
+            int end = i + k ;  // This is the LAST index plus one, i.e after the part we want to reverse. (Exclusive)
             
             if(end > n){
                 end = n;
