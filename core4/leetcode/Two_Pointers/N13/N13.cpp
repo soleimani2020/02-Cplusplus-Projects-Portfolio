@@ -13,7 +13,7 @@ public:
                 end = n;
             }
             
-            
+            // in C++: reverse[start, end)
             reverse(s.begin()+i, s.begin()+end);
             
         }
