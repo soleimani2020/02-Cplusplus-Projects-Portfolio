@@ -1,35 +1,42 @@
-# LeetCode 150: Evaluate Reverse Polish Notation (Medium)
-
-## 🧩 Problem Statement
-
-You are given an array of strings `tokens` that represents a valid arithmetic expression in **Reverse Polish Notation (RPN)**.
-
-Return the integer result of evaluating the expression.
-
-### Rules
-
-- Operands may be integers or results of other operations.
-- Operators include:
-  - `+`
-  - `-`
-  - `*`
-  - `/`
-- Division between integers truncates toward zero.
-
----
-
-## 💡 Approach: Stack
-
-Reverse Polish Notation places operators **after** their operands.
-
-Example:
-["2","1","+","3","*"]
 
 
-represents:
+class Solution {
+public:
+    int evalRPN(vector<string>& tokens) {
 
+        stack<int> s;
 
-(2 + 1) * 3 = 9
+        for (string x : tokens) {
 
+            if (x == "+") {
+                int a = s.top(); s.pop();
+                int b = s.top(); s.pop();
+                s.push(a + b);
+            }
 
-Video Tutorial : https://www.youtube.com/watch?v=8VYdGvOnkl0&t=365s
+            else if (x == "*") {
+                int a = s.top(); s.pop();
+                int b = s.top(); s.pop();
+                s.push(a * b);
+            }
+
+            else if (x == "-") {
+                int a = s.top(); s.pop();
+                int b = s.top(); s.pop();
+                s.push(b - a);
+            }
+
+            else if (x == "/") {
+                int a = s.top(); s.pop();
+                int b = s.top(); s.pop();
+                s.push(b / a);
+            }
+
+            else {
+                s.push(stoi(x));
+            }
+        }
+
+        return s.top();
+    }
+};
