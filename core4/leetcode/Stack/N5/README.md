@@ -1,6 +1,5 @@
 # Next Greater Element I
-
-## Problem
+## 🧩  Problem Statement
 
 Given two arrays `nums1` and `nums2` where `nums1` is a subset of `nums2`, find the next greater element for each element in `nums1`.
 
@@ -32,36 +31,6 @@ nums1 = [4,1,2]
 nums2 = [1,3,4,2]
 ```
 
-### Processing `nums2`
-
-```
-Element: 2
-Next greater: -1
-
-Element: 4
-Next greater: -1
-
-Element: 3
-Next greater: 4
-
-Element: 1
-Next greater: 3
-```
-
-### Map
-
-```
-1 -> 3
-3 -> 4
-4 -> -1
-2 -> -1
-```
-
-### Output
-
-```
-[-1,3,-1]
-```
 
 
 ## Complexity Analysis
@@ -85,3 +54,9 @@ Where:
 - Hash Map
 - Next Greater Element Pattern
 - Stack-based Optimization
+
+
+Video Tutorial 1: https://www.youtube.com/watch?v=NKbExYwvjb0
+
+Video Tutorial 2: [https://www.youtube.com/watch?v=NKbExYwvjb0](https://www.youtube.com/watch?v=mJWQjJpEMa4&t=709s)
+
