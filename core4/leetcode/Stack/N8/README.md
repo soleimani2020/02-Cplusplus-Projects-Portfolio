@@ -1,27 +1,65 @@
-# LeetCode Problem: Decode String (Medium)
+```text
+🧠 Key Idea: Understanding ans
 
-## 🧩 Problem Statement
+ans is the current decoded string at the current nesting level.
 
-Decode a string using the rule `k[encoded_string]`, where the substring inside brackets is repeated `k` times. Use a stack to handle nested brackets by storing previous strings and repeat counts. When a closing bracket `]` is found, reconstruct the decoded substring.  
+Think of ans as a scratchpad:
 
-**Concepts:** Stack, String Parsing, Nested Expressions  
-**Complexity:** Time `O(n)`, Space `O(n)`
+Before [
+→ ans contains the string before entering a new level.
 
+Example:
+x3[a]
 
-The key idea:
+Before [
+ans = "x"
+num = 3
 
-ans is like a scratchpad.
-
-Before [ → it contains the string before entering a new level.
-After [ → it becomes empty and starts collecting the inside.
-Before ] → it contains the completed inner string.
-After ] → it becomes the expanded result.
-
-A good sentence to remember:
-
-ans always stores the decoded string at my current depth. When I go deeper, I reset it. When I come back, I merge it with the previous level.
+We save this state in the stacks.
 
 
-🔗 Video
+After [
+→ We enter a new level, so we reset:
 
-https://www.youtube.com/watch?v=E9qHRcQXmDk&t=15s
+ans = ""
+
+Now ans starts collecting only the content inside the brackets.
+
+
+Before ]
+→ ans contains the completed decoded string inside the current brackets.
+
+Example:
+2[abc]
+
+Before ]
+ans = "abc"
+
+
+After ]
+→ We repeat ans and merge it with the previous string.
+
+Example:
+x2[ab]
+
+Inside:
+ans = "ab"
+
+Repeat:
+"ab" + "ab" = "abab"
+
+Merge:
+"x" + "abab" = "xabab"
+
+
+Memory Trick:
+
+[  → Save the current state and go deeper.
+]  → Restore the previous state, expand the current string, and continue.
+
+In short:
+
+ans always stores the decoded string at my current depth.
+When I go deeper, I reset it.
+When I come back, I merge it with the previous level.
+```
