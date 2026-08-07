@@ -17,6 +17,7 @@ public:
             if(c=='['){
                 letters.push(ans);
                 numsbers.push(num);
+                ans = "";      // start a new substring
                 num = 0;
             }
             
