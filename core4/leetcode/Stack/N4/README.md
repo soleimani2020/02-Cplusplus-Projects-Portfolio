@@ -23,3 +23,7 @@ temperatures = [73,74,75,71,69,72,76,73]
 Output
 
 [1,1,4,2,1,1,0,0]
+
+------
+
+Video Tutorial : https://www.youtube.com/watch?v=ekFs9Nb2RNQ&t=613s
