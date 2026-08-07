@@ -55,6 +55,7 @@ Where:
 - Next Greater Element Pattern
 - Stack-based Optimization
 
+---
 
 Video Tutorial 1: https://www.youtube.com/watch?v=NKbExYwvjb0
 
