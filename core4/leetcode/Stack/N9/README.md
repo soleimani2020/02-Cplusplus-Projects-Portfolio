@@ -32,3 +32,11 @@ asteroids = [5, 10, -5]
 **Input:**
 ```text
 asteroids = [5, 10, -5]
+
+
+Video Tutorial 1 : https://www.youtube.com/watch?v=LN7KjRszjk4
+
+
+Video Tutorial 2 :https://www.youtube.com/watch?v=6GGTBM7mwfs
+
+
