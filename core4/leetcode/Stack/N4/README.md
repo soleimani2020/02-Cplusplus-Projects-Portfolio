@@ -54,8 +54,7 @@ Output
 
 ## Key Idea
 
-Use a **monotonic decreasing stack** to efficiently find the next warmer temperature for each day.
-
+Keep removing the stack top until the top element is strictly larger than the current element.
 
 
 Video Tutorial : https://www.youtube.com/watch?v=ekFs9Nb2RNQ&t=613s
