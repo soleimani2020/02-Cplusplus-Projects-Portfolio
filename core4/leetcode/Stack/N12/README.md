@@ -30,3 +30,9 @@ To implement `push(x)`:
 This ensures that the newest element is always at the **front** of the queue.
 
 Therefore, `pop()` and `top()` can directly operate on the front element.
+
+
+## Video
+
+https://www.youtube.com/watch?v=Eh2gTUHL8Hs
+
