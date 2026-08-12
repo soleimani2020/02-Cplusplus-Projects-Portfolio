@@ -1,32 +1,35 @@
-# Implement Stack Using a Single Queue
+class MyStack {
+public:
 
-**Difficulty:** Easy  
-**Topics:** Queue, Stack, Design
+    queue<int> q;
 
-## Problem
+    MyStack() {
+    }
 
-Implement a last-in-first-out (LIFO) stack using only **one queue**.
+    void push(int x) {
+        q.push(x);
 
-The implemented stack should support:
+        int n = q.size();
 
-- `push(x)` — Pushes `x` onto the stack.
-- `pop()` — Removes and returns the top element.
-- `top()` — Returns the top element.
-- `empty()` — Returns whether the stack is empty.
+        for (int i = 1; i < n; i++) {
+            int value = q.front();
+            q.pop();
+            q.push(value);
+        }
+    }
 
-## Approach
+    int pop() {
+        int value = q.front();
+        q.pop();
 
-Use a single queue.
+        return value;
+    }
 
-The important idea is to make the **newest element always stay at the front** of the queue.
+    int top() {
+        return q.front();
+    }
 
-When we push a new element:
-
-1. Add the new element to the back of the queue.
-2. Rotate all previous elements from the front to the back.
-3. The new element is now at the front.
-
-### Video 
-
-https://www.youtube.com/watch?v=Eh2gTUHL8Hs
-  
+    bool empty() {
+        return q.empty();
+    }
+};
