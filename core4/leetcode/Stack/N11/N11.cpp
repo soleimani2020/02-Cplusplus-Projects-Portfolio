@@ -10,14 +10,15 @@ public:
         input.push(x);
     }
 
+
+
     int pop() {
-        peek();
-
-        int value = output.top();
+        int value = peek();
         output.pop();
-
         return value;
     }
+
+
 
     int peek() {
         if (output.empty()) {
@@ -30,7 +31,11 @@ public:
         return output.top();
     }
 
+
+
     bool empty() {
         return input.empty() && output.empty();
     }
+
+
 };
