@@ -49,15 +49,17 @@ public:
         }
 
 
-        int ans = 0;
+        int max_area = 0;
 
         for(int i = 0; i < n; i++) {
 
             int width = right[i] - left[i] + 1;
-
-            ans = max(ans, heights[i] * width);
+            int current_area = heights[i] * width;
+            if(current_area > max_area){
+                max_area = current_area;
+            }
         }
 
-        return ans;
+        return max_area;
     }
 };
