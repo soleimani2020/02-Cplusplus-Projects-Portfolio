@@ -17,6 +17,7 @@ Design a max stack data structure that supports the following operations:
 - **`popMax()`** – remove and return the maximum element in the stack.  
   *(If there are multiple maximum elements, remove the **topmost** one.)*
 
+---
 
 ## Video Tutorial:
 https://www.youtube.com/watch?v=SyDmmNQFW_I
