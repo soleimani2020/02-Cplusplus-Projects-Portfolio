@@ -1,24 +1,30 @@
-# Maximum Frequency Stack
+# Max Stack
 
-[![LeetCode](https://img.shields.io/badge/LeetCode-895-orange?style=flat-square&logo=leetcode)](https://leetcode.com/problems/maximum-frequency-stack/)
-[![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red?style=flat-square)]()
-[![Topics](https://img.shields.io/badge/Topics-Stack%20%7C%20Hash%20Table%20%7C%20Design-blue?style=flat-square)]()
+[![LeetCode](https://img.shields.io/badge/LeetCode-716-orange?style=flat-square&logo=leetcode)](https://leetcode.com/problems/max-stack/)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green?style=flat-square)]()
+[![Topics](https://img.shields.io/badge/Topics-Stack%20%7C%20Design%20%7C%20Linked%20List%20%7C%20Ordered%20Set-blue?style=flat-square)]()
 
 ---
 
 ## Problem Statement
 
-Design a stack-like data structure that supports the following operations:
+Design a max stack data structure that supports the following operations:
 
-- **`push(int val)`** – pushes an integer `val` onto the stack.
-- **`pop()`** – removes and returns the **most frequent** element in the stack.
-  - If there is a tie (multiple elements have the same highest frequency), the element that is **closest to the top** of the stack (i.e., the most recently pushed among those with the highest frequency) is removed and returned.
+- **`push(int x)`** – push element `x` onto the stack.
+- **`pop()`** – remove and return the top element of the stack.
+- **`top()`** – get the top element of the stack.
+- **`peekMax()`** – retrieve the maximum element in the stack.
+- **`popMax()`** – remove and return the maximum element in the stack.  
+  *(If there are multiple maximum elements, remove the **topmost** one.)*
 
-Implement the `FreqStack` class:
+Implement the `MaxStack` class:
 
 ```java
-class FreqStack {
-    public FreqStack() { ... }
-    public void push(int val) { ... }
+class MaxStack {
+    public MaxStack() { ... }
+    public void push(int x) { ... }
     public int pop() { ... }
+    public int top() { ... }
+    public int peekMax() { ... }
+    public int popMax() { ... }
 }
