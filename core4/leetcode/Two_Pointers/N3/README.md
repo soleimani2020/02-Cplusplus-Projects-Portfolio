@@ -8,6 +8,8 @@ A palindrome is a string that reads the same forward and backward.
 
 You may remove at most one character from the string to make it a palindrome.
 
+"Try removing the left character OR removing the right character. If either produces a palindrome, return true."
+
 ### Constraints
 
 - `1 <= s.length <= 100,000`
